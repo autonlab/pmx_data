@@ -8,27 +8,12 @@ Predictive Maintenance poses a number of challenges for machine learning. The ge
 
 This repository is to help researchers start working on predictive maintenance quickly. It provides an overview of relevant predictive maintenance data and 'quick start' scripts for researchers. We call it the Predictive and prOgnostics maiNtenance data repositorY or (PONY) for short.
 
-+---------------+-------------------+---------------+--------------------------------------------------------+------------------------------------------+
-| **Dataset**   | **Description**   | **Problems**  | **Location**                                           | **Repositories**                         |
-+===============+===================+===============+========================================================+==========================================+
-| Loghub        |                   |               |                                                        |                                          |
-+---------------+-------------------+---------------+--------------------------------------------------------+------------------------------------------+
-| Nasa          |                   | Supervised    | https://s3-us-west-2.amazonaws.com/telemanom/data.zip  | https://github.com/khundman/telemanom    |
-| Telemanom     |                   | Anomaly       |                                                        |                                          |
-|               |                   | Detection     |                                                        |                                          |
-|               |                   |               |                                                        |                                          |
-+---------------+-------------------+---------------+--------------------------------------------------------+------------------------------------------+
-| Nasa          | Multi-dimensional | Time to event | Not currently available online.                        |                                          |
-| Turbofan      | sensor data       | Prediction    | CMU team maintains a copy, also available from the     |                                          |
-|               | from simulated    |               | author on request.                                     |                                          |
-|               | run to failure    |               |                                                        |                                          |
-|               | experiments       |               |                                                        |                                          |
-+---------------+-------------------+---------------+--------------------------------------------------------+------------------------------------------+
-| LANL          | high frequency    | Time to event | www.kaggle.com/competitions/LANL-Earthquake-Prediction |                                          |
-| Acousitic     | 1-d timeseries    | prediction    |                                                        |                                          |
-| Earthquake    | data with         |               |                                                        |                                          |
-| Data          | regression        |               |                                                        |                                          |
-+---------------+-------------------+---------------+--------------------------------------------------------+------------------------------------------+
+| **Dataset**  | **Description**  | **Problems**  | **Location**  | **Existing Benchmark**  |
+|--------------|------------------|---------------|---------------|-------------------|
+| NASA Telemanom  |   | Supervised Anomaly Detection  |  https://s3-us-west-2.amazonaws.com/telemanom/data.zip | https://github.com/khundman/telemanom   |
+| NASA Turbofan  | Multidimensional sensor data from simulated run to faillure experiments   | TIme to event prediction  | Not currently online, copy available from CMU team or the authors on request  |   |
+| LANL Acoustic Earthquake data   | high frequency 1d timeseries with regression targets  | time to event prediction  | www.kaggle.com/competitions/LANL-Earthquake-Prediction  |   |
+
 
 # Adding a dataset
 The minimum requirments to add a dataset to this repostiory are
