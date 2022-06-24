@@ -12,7 +12,7 @@ This repository is to help researchers start working on predictive maintenance q
 |--------------|------------------|---------------|---------------|-------------------|
 | NASA Telemanom  |   | Supervised Anomaly Detection  |  https://s3-us-west-2.amazonaws.com/telemanom/data.zip | https://github.com/khundman/telemanom   |
 | NASA Turbofan  | Multidimensional sensor data from simulated run to faillure experiments   | TIme to event prediction  | Not currently online, copy available from CMU team or the authors on request  |   |
-| LANL Acoustic Earthquake data   | high frequency 1d timeseries with regression targets  | time to event prediction  | www.kaggle.com/competitions/LANL-Earthquake-Prediction  |   |
+| LANL Acoustic Earthquake data   | high frequency 1d timeseries with regression targets  | Time to event prediction  | www.kaggle.com/competitions/LANL-Earthquake-Prediction  |   |
 
 
 # Adding a dataset
