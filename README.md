@@ -4,7 +4,7 @@ Predictive Maintenance poses a number of challenges for machine learning. The ge
 1. Time to failure prediction
 2. Anomaly Detection
 3. Clustering
-4. Failure root cause analysis
+4. Fault detection and root cause analysis
 
 This repository is to help researchers start working on predictive maintenance quickly. It provides an overview of relevant predictive maintenance data and 'quick start' scripts for researchers. We call it the Predictive and prOgnostics maiNtenance data repositorY or (PONY) for short.
 
@@ -13,6 +13,7 @@ This repository is to help researchers start working on predictive maintenance q
 | NASA Telemanom  |   | Supervised Anomaly Detection  |  https://s3-us-west-2.amazonaws.com/telemanom/data.zip | https://github.com/khundman/telemanom   |
 | NASA Turbofan  | Multidimensional sensor data from simulated run to faillure experiments   | TIme to event prediction  | Not currently online, copy available from CMU team or the authors on request  |   |
 | LANL Acoustic Earthquake data   | high frequency 1d timeseries with regression targets  | Time to event prediction  | www.kaggle.com/competitions/LANL-Earthquake-Prediction  |   |
+| Gearbox   | Bench test gearbox with 7 induced faults to detect in 3 channel, high frequency timeseries | Fault Detection  | https://c3.ndc.nasa.gov/dashlink/resources/997/  |   |
 
 
 # Adding a dataset
