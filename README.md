@@ -14,12 +14,12 @@ This repository is to help researchers start working on predictive maintenance q
 | NASA Turbofan  | Multidimensional sensor data from simulated run to faillure experiments   | TIme to event prediction  | Not currently online, copy available from CMU team or the authors on request  |   |
 | LANL Acoustic Earthquake data   | high frequency 1d timeseries with regression targets  | Time to event prediction  | www.kaggle.com/competitions/LANL-Earthquake-Prediction  |   |
 | Gearbox   | Bench test gearbox with 7 induced faults to detect in 3 channel, high frequency timeseries | Fault Detection  | https://c3.ndc.nasa.gov/dashlink/resources/997/  |   |
-
+| prediction_of_downtime_duration | Predicting downtime duration of car manufacturing assembly lines | Time to event prediction | https://github.com/aayanmaity/Predicting-the-downtime-duration-of-a-factory |  |
 
 # Adding a dataset
 The minimum requirments to add a dataset to this repostiory are
 1. Create a directory for the data
-2. Adding a row in the index table, including what type of problem the data set is used for and its relevance to predicctive maintenance
+2. Adding a row in the index table, including what type of problem the data set is used for and its relevance to predictive maintenance
 3. Writing a script to download the data
 4. Providing a sample script to load the data
 
