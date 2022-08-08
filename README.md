@@ -15,6 +15,7 @@ This repository is to help researchers start working on predictive maintenance q
 | LANL Acoustic Earthquake data   | high frequency 1d timeseries with regression targets  | Time to event prediction  | www.kaggle.com/competitions/LANL-Earthquake-Prediction  |   |
 | Gearbox   | Bench test gearbox with 7 induced faults to detect in 3 channel, high frequency timeseries | Fault Detection  | https://c3.ndc.nasa.gov/dashlink/resources/997/  |   |
 | prediction_of_downtime_duration | Predicting downtime duration of car manufacturing assembly lines | Time to event prediction | https://github.com/aayanmaity/Predicting-the-downtime-duration-of-a-factory |  |
+| cnc_mill_tool_wear | Time series machining data across 18 CNC milling experiments | Fault Detection | https://www.kaggle.com/datasets/shasun/tool-wear-detection-in-cnc-mill |  |
 
 # Adding a dataset
 The minimum requirments to add a dataset to this repostiory are
