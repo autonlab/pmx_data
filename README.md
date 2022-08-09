@@ -19,9 +19,10 @@ This repository is to help researchers start working on predictive maintenance q
 | diesel_engine_faults | Diesel engine data from failure scenarios across 4 operating states | Fault Detection | https://data.mendeley.com/datasets/k22zxz29kr/1 |  |
 | autonomous_underwater_vehicle | Time series measurements from an underwater vehicle with 5 fault types | Fault Detection | https://data.mendeley.com/datasets/7rp2pmr6mx/1 |  |
 | electrical_fault_detection | Line currents and voltages of electrical system with 4 fault conditions | Fault Detection and Classification | https://www.kaggle.com/datasets/esathyaprakash/electrical-fault-detection-and-classification |  |
+| hdd_data | 2013 BlackBlaze hard drive failure data | Time to failure prediction | https://www.backblaze.com/b2/hard-drive-test-data.html |  |
 
 # Adding a dataset
-The minimum requirments to add a dataset to this repostiory are
+The minimum requirements to add a dataset to this repostiory are
 1. Create a directory for the data
 2. Adding a row in the index table, including what type of problem the data set is used for and its relevance to predictive maintenance
 3. Writing a script to download the data
