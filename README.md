@@ -17,6 +17,7 @@ This repository is to help researchers start working on predictive maintenance q
 | prediction_of_downtime_duration | Predicting downtime duration of car manufacturing assembly lines | Time to event prediction | https://github.com/aayanmaity/Predicting-the-downtime-duration-of-a-factory |  |
 | cnc_mill_tool_wear | Time series machining data across 18 CNC milling experiments | Fault Detection | https://www.kaggle.com/datasets/shasun/tool-wear-detection-in-cnc-mill |  |
 | diesel_engine_faults | Diesel engine data from failure scenarios across 4 operating states | Fault Detection | https://data.mendeley.com/datasets/k22zxz29kr/1 |  |
+| autonomous_underwater_vehicle | Time series measurements from an underwater vehicle with 5 fault types | Fault Detection | https://data.mendeley.com/datasets/7rp2pmr6mx/1 |  |
 
 # Adding a dataset
 The minimum requirments to add a dataset to this repostiory are
