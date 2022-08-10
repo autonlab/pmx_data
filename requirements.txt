@@ -1,0 +1,5 @@
+pandas
+kaggle
+scipy
+
+unrar (command-line tool, not installable through pip)
