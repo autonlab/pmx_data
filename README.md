@@ -22,6 +22,7 @@ This repository is to help researchers start working on predictive maintenance q
 | hdd_data | 2013 BlackBlaze hard drive failure data | Time to failure prediction | https://www.backblaze.com/b2/hard-drive-test-data.html |  |
 | hydraulic_sensor_system | Time series sensor readings on a hydraulic test rig with target condition values | Fault Detection and Classification | https://archive.ics.uci.edu/ml/datasets/Condition+monitoring+of+hydraulic+systems# |  |
 | li-ion_battery_aging | Data from tests on 4 Lithium-Ion batteries cycled under random currents | Time to failure prediction | https://github.com/VaibhavBhujade/RUL-of-Lithium-Ion-Battery/tree/main/CSVs |  |
+| maintenance_of_naval_propulsion_plants | Synthetic gas turbine data | Time to failure prediction | https://archive.ics.uci.edu/ml/datasets/Condition+Based+Maintenance+of+Naval+Propulsion+Plants |  |
 
 # Adding a dataset
 The minimum requirements to add a dataset to this repostiory are
