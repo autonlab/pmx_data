@@ -24,6 +24,7 @@ This repository is to help researchers start working on predictive maintenance q
 | li-ion_battery_aging | Data from tests on 4 Lithium-Ion batteries cycled under random currents | Time to failure prediction | https://github.com/VaibhavBhujade/RUL-of-Lithium-Ion-Battery/tree/main/CSVs |  |
 | maintenance_of_naval_propulsion_plants | Synthetic gas turbine data | Time to failure prediction | https://archive.ics.uci.edu/ml/datasets/Condition+Based+Maintenance+of+Naval+Propulsion+Plants |  |
 | nasa_milling_prognostic_dataset | Investigating wear on a milling machine under several runs in various operating conditions | Fault Detection | https://www.kaggle.com/datasets/vinayak123tyagi/milling-data-set-prognostic-data |  |
+| one_year_industrial_component_degradation | High-frequency time series data documentating degradation of an industrial component over the course of a year | Time to failure prediction | https://www.kaggle.com/datasets/inIT-OWL/one-year-industrial-component-degradation |  |
 
 # Adding a dataset
 The minimum requirements to add a dataset to this repostiory are
