@@ -29,7 +29,8 @@ This repository is to help researchers start working on predictive maintenance q
 | pmx_for_ga | Per-second sensor data from flights of a Cessna 172S preceeding maintenance | Time to failure prediction | https://www.kaggle.com/datasets/hooong/ngafid-mc-20210917 |  |
 | plant_fault_detection | Time series measurement from 70 plants with 6 fault types | Fault detection | https://github.com/robot007/PHM15 |  |
 | predictive_maintenance_fault_classification | Sensor data from a drill press under induced fault conditions | Fault detection and classification | https://github.com/nagdevAmruthnath/Predictive-Maintenance |  |
-| pmx_for_aircraft_machine_and_components | telemetry time series data and maintenance records for aircraft | https://www.kaggle.com/datasets/arnabbiswas1/microsoft-azure-predictive-maintenance |  |
+| pmx_for_aircraft_machine_and_components | telemetry time series data and maintenance records for aircraft | Time to failure prediction | https://www.kaggle.com/datasets/arnabbiswas1/microsoft-azure-predictive-maintenance |  |
+| pmx_from_elevator_industry | Data on elevator ball bearing wear | Time to failure prediction | https://zenodo.org/record/3653909#.YsmqoC8Rrys |  |
 
 
 # Adding a dataset
