@@ -31,6 +31,7 @@ This repository is to help researchers start working on predictive maintenance q
 | predictive_maintenance_fault_classification | Sensor data from a drill press under induced fault conditions | Fault detection and classification | https://github.com/nagdevAmruthnath/Predictive-Maintenance |  |
 | pmx_for_aircraft_machine_and_components | telemetry time series data and maintenance records for aircraft | Time to failure prediction | https://www.kaggle.com/datasets/arnabbiswas1/microsoft-azure-predictive-maintenance |  |
 | pmx_from_elevator_industry | Data on elevator ball bearing wear | Time to failure prediction | https://zenodo.org/record/3653909#.YsmqoC8Rrys |  |
+| production_plant_data_for_condition_monitoring | Sensor data form 8 run-to-failure experiements on a production line component | Time to failure prediction | https://www.kaggle.com/datasets/inIT-OWL/production-plant-data-for-condition-monitoring |  |
 
 
 # Adding a dataset
