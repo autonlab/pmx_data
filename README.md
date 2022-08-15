@@ -11,7 +11,7 @@ This repository is to help researchers start working on predictive maintenance q
 | **Dataset**  | **Description**  | **Problems**  | **Location**  | **Existing Benchmark**  |
 |--------------|------------------|---------------|---------------|-------------------|
 | NASA Telemanom  |   | Supervised Anomaly Detection  |  https://s3-us-west-2.amazonaws.com/telemanom/data.zip | https://github.com/khundman/telemanom   |
-| NASA Turbofan  | Multidimensional sensor data from simulated run to faillure experiments   | TIme to event prediction  | Not currently online, copy available from CMU team or the authors on request  |   |
+| turbofan  | Multidimensional sensor data from simulated run to faillure experiments   | Time to event prediction  | https://www.kaggle.com/datasets/behrad3d/nasa-cmaps  |   |
 | LANL Acoustic Earthquake data   | high frequency 1d timeseries with regression targets  | Time to event prediction  | www.kaggle.com/competitions/LANL-Earthquake-Prediction  |   |
 | Gearbox   | Bench test gearbox with 7 induced faults to detect in 3 channel, high frequency timeseries | Fault Detection  | https://c3.ndc.nasa.gov/dashlink/resources/997/  |   |
 | prediction_of_downtime_duration | Predicting downtime duration of car manufacturing assembly lines | Time to event prediction | https://github.com/aayanmaity/Predicting-the-downtime-duration-of-a-factory |  |
