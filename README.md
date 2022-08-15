@@ -36,6 +36,7 @@ This repository is to help researchers start working on predictive maintenance q
 | scania_trucks_air_pressure_system_failure | Classifying whether truck failure is a result of its air pressure system | Fault classification | https://archive.ics.uci.edu/ml/datasets/APS+Failure+at+Scania+Trucks |  |
 | solar_power_generation | Power generation and weather data for 2 solar power plants | Fault detection | https://www.kaggle.com/datasets/anikannal/solar-power-generation-data |  |
 | pump_sensor | Time series sensor readings from a water pump with status | Anomaly detection | https://www.kaggle.com/datasets/nphantawee/pump-sensor-data |  |
+| gearbox_fault_diagnosis | Vibration measurements from healthy and faulty gearboxes with varying loads and recoring frequencies | Fault detection | https://www.kaggle.com/datasets/brjapon/gearbox-fault-diagnosis |  |
 
 
 # Adding a dataset
