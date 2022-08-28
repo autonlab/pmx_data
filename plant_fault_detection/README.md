@@ -8,7 +8,7 @@ The dataset is about fault detection and prognostics in industrial plant monitor
 The dataset for a particular plant consist of 3 data files titled: 
 * Plant(Number)a --> the data in this file give the following information: time series of sensor measurements and control reference signals for each of a number of control components of the plant
 * Plant(Number)b --> this file provides the information about time series data that represents additional measurements of a fixed number of plant zones over the same period of time where a zone may cover one or more plant components
-* Plant(Number)c --> this file represents plant fault events, each characterized by a start time, an end time, and a failure code.
+* Plant(Number)c --> this file represents plant fault events, each characterized by a start time, an end time, and a failure code
 
 Each plant is specific through its number of components and the number of zones, however each plant logs faults from the same fixed set of faults.
 Faults 1 to 5 are of interest (fault with code 6 represents all other faults which are not in focus).

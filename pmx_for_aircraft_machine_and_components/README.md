@@ -1,24 +1,24 @@
 # PREDICTIVE MAINTENANCE FOR AIRCRAFT MACHINE AND COMPONENTS - DATASET DESCRIPTION:
 
-The aim of this project is to predict failures due to some certain components of a machine in a period of time of 24 hour.
+The aim of this project is to predict failures due to some certain components of a machine in a period of time of 24 hours.
 In the dataset we can distinguish 5 files with data and each of them present some other information.
 
 PdM_telemetry – this is Telemetry Time Series Data. It consists of 6 columns – each of them present different values.
 1 – this is the datetime when the measurement of sensors recordings.
-2 – gives machine ID number
+2 – gives machine ID number.
 The rest of the columns is from the hourly averaged sensors recordings 
-3 – gives us the values from voltage sensor
-4 – presents values from rotation sensors
-5 – stands for the pressure sensor recordings
+3 – gives us the values from voltage sensor.
+4 – presents values from rotation sensors.
+5 – stands for the pressure sensor recordings.
 6 – contains values from vibration sensor.
 The values were collected from 100 machines for the year 2015.
 
 
-PdM_maint – this is the dataset from the maintenance. This means that if a component of a machine is replaced, the record of such event is taken and record in this dataset.
+PdM_maint – this is the dataset from the maintenance. This means that if a component of a machine is replaced, the record of such event is taken and recorded in this dataset.
 There are 2 situations in which the components can be replaced:
-1.	During the regular scheduled visit, when the technician simply replaces it (what is called the Proactive Maintenance). From this data we have 2014 records
+1.	During the regular scheduled visit, when the technician simply replaces it (what is called the Proactive Maintenance). From this data we have 2014 records.
 2.	In the situation when the component breaks down what means that the technician has a responsibility to perform an unscheduled maintenance in order to replace the broken component (what is called the Reactive Maintenance). Such situation is considered to be a failure and data recorded during such event is captured under the Failures dataset. This data gives 2015 records.
-The data is rouned to the closest hour due to the telemetry data which was collected at an hourly rate
+The data is rounded to the closest hour due to the telemetry data which was collected at an hourly rate.
 
 PdM_machines – this dataset consist of 3 columns and  simply gives us the information about machine ID, model type and age of the machines.
 
