@@ -34,7 +34,7 @@ This repository is to help researchers start working on predictive maintenance q
 | production_plant_data_for_condition_monitoring | Sensor data from 8 run-to-failure experiements on a production line component | Time to failure prediction | https://www.kaggle.com/datasets/inIT-OWL/production-plant-data-for-condition-monitoring |  |
 | robot_execution_failures | Sensor data from a robot after 5 different types of failures | Time to failure prediction | https://www.kaggle.com/datasets/prashant111/robot-execution-failures |  |
 | scania_trucks_air_pressure_system_failure | Classifying whether truck failure is a result of its air pressure system | Fault classification | https://archive.ics.uci.edu/ml/datasets/APS+Failure+at+Scania+Trucks |  |
-
+| machinery_faults_datasets | Extremely large dataset of simulated time series machinery data with 6 operating states, each of which can have several fualt types | Fault classification | http://www02.smt.ufrj.br/~offshore/mfs/page_01.html |  |
 
 
 # Adding a dataset
