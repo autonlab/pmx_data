@@ -10,20 +10,20 @@ The dataset consists of 3 different types of sensors (all of them acquired at se
 - current sensor
 
 The dataset contains 14 different columns, that represents the following fields:
-1. Row number
-2. Case - gives case number from 1 to 16
-3. Run - counter for experimental runs in each case. The number of runs was dependent on the degree of flank wear, measured between runs at irregular intervals up to a wear limit (sometimes also beyond).
-4. VB - Flank wear, measured after runs.Flank wear was not always measured and at times when no measurements were taken, no entry was made.
-5. time - Duration of experiment (restarts for each case)
-6. DOC - this abbreviation stands for Depth of cut (does not vary for each case)
-7. feed - Feed (does not vary for each case)
-8. material - Material (also does not vary for each case)
+1. row number
+2. case - gives case number from 1 to 16
+3. run - counter for experimental runs in each case. The number of runs was dependent on the degree of flank wear, measured between runs at irregular intervals up to a wear limit (sometimes also beyond).
+4. VB - flank wear, measured after runs. Flank wear was not always measured and at times when no measurements were taken, no entry was made.
+5. time - duration of experiment (restarts for each case)
+6. DOC - this abbreviation stands for depth of cut (does not vary for each case)
+7. feed - feed (does not vary for each case)
+8. material - material (also does not vary for each case)
 9. smcAC - AC spindle motor current
 10. smcDC - DC spindle motor current
-11. vib_table - Table vibration
-12. vib_spindle - Spindle vibration
-13. AE_table - Acoustic emission at table
-14. AE_spindle - Acoustic emission at spindle
+11. vib_table - table vibration
+12. vib_spindle - spindle vibration
+13. AE_table - acoustic emission at table
+14. AE_spindle - acoustic emission at spindle
 
 For detailed description, in the Documentation subfolder is available to download the README file in pdf format written by Kai Goebel (NASA Ames) & Alice Agogino (UC Berkeley) [citation provided in the SOURCES file).
 

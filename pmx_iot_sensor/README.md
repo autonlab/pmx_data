@@ -6,16 +6,16 @@ The database is derived from a proxy of automotive components, such as motors, r
  
 The database consists of 944 observations and 10 features.
 The description of the features found in this dataset is as follows:
-- footfall: The total number of workers in the shop floor at a particular instance of time
+- footfall: the total number of workers in the shop floor at a particular instance of time
 - tempMode: temperature mode (1-7), where one is minimum, and seven is maximum
 - AQ: Air Quality sensor, with modes between 1 to 7, where modes 1-5 are acceptable levels of air quality and mode 6 -7 are considered not acceptable
-- Ultrasound Sensor, used to detect high or low-frequency sounds due to leakage.
+- Ultrasound Sensor: used to detect high or low-frequency sounds due to leakage
 - CS: Current Sensor to monitor the current flow. Its level is between 1- 7, where 1 in minimal level and 7 is maximum current flow
-- VOC: (PhotoIonization Detector) sensors used for detecting low concentrations of Volatile Organic Compound to detect clogging in conduits of heat exchanger unit.
-- RP: Outside room Pressure.
-- IP: Inside Pressure of machine conduits for leak detection.
+- VOC: (PhotoIonization Detector) sensors used for detecting low concentrations of Volatile Organic Compound to detect clogging in conduits of heat exchanger unit
+- RP: outside room Pressure
+- IP: Inside Pressure of machine conduits for leak detection
 - Temperature: actual temperature of machinery
-- Output: The target variable predicting whether the equipment is running or failed. It is a binary coded variable, where 0 depicts running, and 1 represents failure.
+- Output: the target variable predicting whether the equipment is running or failed. It is a binary coded variable, where 0 depicts running, and 1 represents failure
 
 # SOURCES RELATED TO~ THE IoT SENSORS IN THE FIELD OF PMx:
 

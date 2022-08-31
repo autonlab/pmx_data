@@ -2,7 +2,6 @@
 import os
 import pandas as pd
 import numpy as np
-import plotly.express as px
 
 #    • Channel 1 is the input side Accelerometer
 #    • Channel 2 is the output side Accelerometer

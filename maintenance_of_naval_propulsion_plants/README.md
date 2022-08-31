@@ -13,9 +13,9 @@ Having information about these 3 parameters, it is possible by their combination
 
 In order to discretize the compressor degradation state, the compressor degradation coefficient was studied in the [1; 0.95] domain, while the turbine degradation coefficient was studied in the [1; 0.975] domain.
 
-The ship's speed was tested by sampling real speed from 3 knots (kt) to 27 kt with a granularity of representation equal to tree knots.
+The ship's speed was tested by sampling real speed from 3 knots (kt) to 27 kt with a granularity of representation equal to three knots.
 
-The dataset file saved in txt format consist of 18 column (16 column that contain Gas Turbine measures (features) that indirectly represents the state pf the system subject to the performance decay and 2 columns which represent the coefficient state).
+The dataset file saved in txt format consists of 18 columns (16 columns that contain Gas Turbine measures (features) that indirectly represent the state of the system subject to the performance decay and 2 columns which represent the coefficient state).
 
 
 The columns are as follow:

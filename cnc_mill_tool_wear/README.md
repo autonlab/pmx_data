@@ -6,8 +6,8 @@ Data from the machine was collected taking into account the changes taking place
 Each experiment ended with the creation of a finished wax part, the top surface of which had the letter "S" engraved on it.
 
 You can use this dataset for the experiment in the fields such as:
-- Tool wear detection: you can use here supervised binary classification in order to perform the identification process of worn and unworn cutting tools.  Out of 18 experiments were conducted with an unworn tool, whereas 10 were run with a worn tool
-- Detection of inadequate clamping: in this case, the data would be used in order to detect the condition when a workpiece is not being held in the vise with sufficient pressure to pass visual inspection. The experiments were run with the pressures values of 2.5, 3 and 4 bar. Moreover this data could also be used for a detection of the conditions at which occurs critical point which further prevents the machining operation from completing.
+- Tool wear detection: you can use here supervised binary classification in order to perform the identification process of worn and unworn cutting tools.  Out of 18 experiments, 8 were conducted with an unworn tool, whereas 10 were run with a worn tool.
+- Detection of inadequate clamping: in this case, the data would be used in order to detect the condition when a workpiece is not being held in the vise with sufficient pressure to pass visual inspection. The experiments were run with the pressures values of 2.5, 3 and 4 bar. Moreover this data could also be used for a detection of the conditions at which a critical point occurs which further prevents the machining operation from completing.
 
 
 In the dataset we can distinguish 18 files with the experiments data recordings and one train file where you can find a general data from each of the 1 different experiments. A sampling rate of the collected data was 100ms.
@@ -24,7 +24,7 @@ These measurements might be used in 2 ways:
 2) as if each of the 1 experiments is taken as an observation for time series classification.
 
 The outputs (predictions):
-* tool_condition - provides an information about label for unworn and worn tools
+* tool_condition - provides an information about label for unworn and worn tools.
 * machining_finalized - that column informs whether the machining was completed without the workpiece moving out of the pneumatic vise or not.
 * passed_visual_inspection - this column indicates if the workpiece passed visual inspection. This is only available when the machining process in the experiment was completed.
 
