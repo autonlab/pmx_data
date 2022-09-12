@@ -21,14 +21,14 @@ For LP5 this is 164
 
 There are 90 features in each of the 5 datasets. Each of these features represents a torque or a force measured after failure detection.
 Each failure is characterized by 15 force/torque samples collected at regular intervals starting immediately after the failure is detected.
-Każdy z przykładów w danej bazie danych definiowany jest w następujący sposób:
+Each of the examples in a given database is defined as follows:
 
 Column 1 is the name of the class which is (in brackets are given percentages of instances per class in each dataset): 
 - For LP1: normal(24%), collision(19%), obstruction(39%), fr_collision(18%);
 - For LP2: normal(43%), back_col(15%), front_col(13%), right_col(11%), left_col(19%);
 - For LP3: ok(43%), moved(32%), slightly_moved(19%), lost(6%);
 - For LP4: normal(21%), collision(62%), obstruction(18%);
-- For LP5: normal(27%), collision_in_tool(16%), collision_in_part(29%), bottom_obstruction(13%), bottom_collision.
+- For LP5: normal(27%), collision_in_tool(16%), collision_in_part(29%), bottom_obstruction(13%), bottom_collision;
 
 Columns from 2 to 7 represents the following features:
 Fx1	Fy1	Fz1	Tx1	Ty1	Tz1

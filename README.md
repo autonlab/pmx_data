@@ -2,7 +2,7 @@
 
 Predictive Maintenance poses a number of challenges for machine learning. The general types of machine learning problems encountered in predictive maintenance are
 1. Time to failure prediction
-2. Anomaly Detection
+2. Anomaly detection
 3. Clustering
 4. Fault detection and root cause analysis
 
@@ -40,7 +40,7 @@ This repository is to help researchers start working on predictive maintenance q
 
 
 # Adding a dataset
-The minimum requirements to add a dataset to this repostiory are
+The minimum requirements to add a dataset to this repository are
 1. Create a directory for the data
 2. Adding a row in the index table, including what type of problem the data set is used for and its relevance to predictive maintenance
 3. Writing a script to download the data

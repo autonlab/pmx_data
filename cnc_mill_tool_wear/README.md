@@ -1,30 +1,30 @@
 # CNC MILL TOOL WEAR DATASET DESCRIPTION:
 
 The database consists of a series of files, wherein, each of these files contains sensor data taken in the course of conducting a single experiment.
-A series of these machining experiments were conducted using wax blocks(2 "x2 "x1.5") with a CNC milling machine located in the System-level Manufacturing and Automation Research Testbed (SMART) at the University of Michigan.
+A series of these machining experiments were conducted using wax blocks(2" x 2" x 1.5") with a CNC milling machine located in the System-level Manufacturing and Automation Research Testbed (SMART) at the University of Michigan.
 Data from the machine was collected taking into account the changes taking place regarding tool condition, feed speed and clamping pressure.
 Each experiment ended with the creation of a finished wax part, the top surface of which had the letter "S" engraved on it.
 
 You can use this dataset for the experiment in the fields such as:
-- Tool wear detection: you can use here supervised binary classification in order to perform the identification process of worn and unworn cutting tools.  Out of 18 experiments were conducted with an unworn tool, whereas 10 were run with a worn tool
-- Detection of inadequate clamping: in this case, the data would be used in order to detect the condition when a workpiece is not being held in the vise with sufficient pressure to pass visual inspection. The experiments were run with the pressures values of 2.5, 3 and 4 bar. Moreover this data could also be used for a detection of the conditions at which occurs critical point which further prevents the machining operation from completing.
+- Tool wear detection: you can use here supervised binary classification in order to perform the identification process of worn and unworn cutting tools.  Out of 18 experiments, 8 were conducted with an unworn tool, whereas 10 were run with a worn tool.
+- Detection of inadequate clamping: in this case, the data would be used in order to detect the condition when a workpiece is not being held in the vise with sufficient pressure to pass visual inspection. The experiments were run with the pressures values of 2.5, 3 and 4 bar. Moreover this data could also be used for a detection of the conditions at which a critical point occurs which further prevents the machining operation from completing.
 
 
 In the dataset we can distinguish 18 files with the experiments data recordings and one train file where you can find a general data from each of the 1 different experiments. A sampling rate of the collected data was 100ms.
-In this train file you are given with 7 different columns:
+In this train file there are 7 different columns:
 
-The inputs (features) are  as follow:
+The inputs (features):
 * No - experiment number 
-* material - this is an information about the material on which the experiment has been conducted - in this case this is wax.
-* feed rate - this column provides an information about the relative velocity of the cutting tool along the workpiece (mm/s)
-* clamp_pressure - gives an information about the pressure used to hold the workpiece in the vise (given in bar unit)
+* material - the material on which the experiment has been conducted - in this case this is wax.
+* feed rate - the relative velocity of the cutting tool along the workpiece (mm/s)
+* clamp_pressure - the pressure used to hold the workpiece in the vise (bars)
 Each of the measurements from the experiments (files experiment_1 to experiment_18) were taken from 4 motors in the CNC (X, Y, Z axes and spindle). 
 These measurements might be used in 2 ways:
 1) as if every CNC measurement is an independent observation where the operation being performed is given in the column titled the Machining_Process. Active machining operations are labeled as "Layer 1 Up", "Layer 1 Down", "Layer 2 Up", "Layer 2 Down", "Layer 3 Up", and "Layer 3 Down". 
 2) as if each of the 1 experiments is taken as an observation for time series classification.
 
 The outputs (predictions):
-* tool_condition - provides an information about label for unworn and worn tools
+* tool_condition - provides an information about label for unworn and worn tools.
 * machining_finalized - that column informs whether the machining was completed without the workpiece moving out of the pneumatic vise or not.
 * passed_visual_inspection - this column indicates if the workpiece passed visual inspection. This is only available when the machining process in the experiment was completed.
 
@@ -90,7 +90,7 @@ For the Machine:
 
 The last column in the experiment files is titles as Machining_Process - this column provides an information about the current machining stage being performed. There is included the information about the preparation, tracing up and down the Spindle (S) curve and involves different lanes and also repositions  of the spindle as it moves through the air to a certain starting point.
 
-# DATASET SOURCES< CITATION AND LICENSE
+# DATASET SOURCES, CITATION AND LICENSE
 
 The dataset originally has been downloaded to this repository from the kaggle website and is available under the following link: https://www.kaggle.com/datasets/shasun/tool-wear-detection-in-cnc-mill
 On this website you can also find some useful codes written with the use of this dataset.

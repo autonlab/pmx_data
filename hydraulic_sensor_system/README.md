@@ -1,6 +1,6 @@
 Hydraulic System Sensor Dataset Description:
 
-The data set used for the purpose to the project has been successfully downloaded from UCI website
+The data set used for the purpose of the project has been successfully downloaded from UCI website
 and is available under the following link: https://archive.ics.uci.edu/ml/datasets/Condition+monitoring+of+hydraulic+systems.
 This Database refers to the data taken from the sensors of the hydraulic test equipment to evaluate its technical condition.
 Four types of faults have been superimposed together with different degrees of severity.
@@ -70,7 +70,7 @@ UCI repository link, where the database is located: https://archive.ics.uci.edu/
 Citation: Dua, D. and Graff, C. (2019). UCI Machine Learning Repository [http://archive.ics.uci.edu/ml]. Irvine, CA: University of California, School of Information and Computer Science.
 
 
-Link to gitHub with the project: https://github.com/mjain72/Condition-monitoring-of-hydraulic-systems-using-xgboost-modeling/blob/master/HydraulicCondition.ipynb - this link is also provided with the following LICENSE: 
+Link to github with the project: https://github.com/mjain72/Condition-monitoring-of-hydraulic-systems-using-xgboost-modeling/blob/master/HydraulicCondition.ipynb - this link is also provided with the following LICENSE: 
 
 MIT License
 

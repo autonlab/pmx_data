@@ -8,8 +8,8 @@ The training set contains 60000 examples in which 59000 belongs to the negative 
 * The negative class consists of different trucks with failures which occurred in different components which are not belonging to the Air Pressure System.
 
 Whereas the test set file consists of 16000 examples with 171 different attributes per one record of which we have 7 histogram variables. Where the values are missing, such places are denoted by "NA".
-The exact names of the attributes of the data have been anonymized due to the proprietary reasons.
-We are given here with both the single numerical counters and the histograms that consist of bins together with different conditions.
+The exact names of the attributes of the data have been anonymized due to proprietary reasons.
+We are given here both the single numerical counters and the histograms that consist of bins together with different conditions.
 Mostly the histograms that are there have open-ended conditions at each end. For instance, at the moment when we measure the ambient temperature "T" - the histogram would be defined with 4 bins together with the following attributes:
 - class
 - anonymized operational data
@@ -26,7 +26,7 @@ License link: https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html
 
 # Useful links and resources
 
-This datasets have been downloaded from the UCI ML Repository. You can acces online this data via the link below:
+These datasets have been downloaded from the UCI ML Repository. You can access online this data via the link below:
 https://archive.ics.uci.edu/ml/datasets/APS+Failure+at+Scania+Trucks
 
 Citation: Dua, D. and Graff, C. (2019). UCI Machine Learning Repository [http://archive.ics.uci.edu/ml]. Irvine, CA: University of California, School of Information and Computer Science.
