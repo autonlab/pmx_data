@@ -38,6 +38,7 @@ This repository is to help researchers start working on predictive maintenance q
 | pump_sensor | Time series sensor readings from a water pump with status | Anomaly detection | https://www.kaggle.com/datasets/nphantawee/pump-sensor-data |  |
 | gearbox_fault_diagnosis | Vibration measurements from healthy and faulty gearboxes with varying loads and recoring frequencies | Fault detection | https://www.kaggle.com/datasets/brjapon/gearbox-fault-diagnosis |  |
 | machinery_faults_datasets | Extremely large dataset of simulated time series machinery data with 6 operating states, each of which can have several fault types | Fault classification | http://www02.smt.ufrj.br/~offshore/mfs/page_01.html |  |
+| delta_robot | Time series sensor data for a robot used in a production line | Anomaly detection | https://data.mendeley.com/datasets/fddp3dvvzr |  |
 
 # Adding a dataset
 The minimum requirements to add a dataset to this repository are
