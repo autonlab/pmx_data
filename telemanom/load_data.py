@@ -1,11 +1,19 @@
+import numpy as np
 import pandas as pd
-import numpy as pd
 import os
 
-# General parameters
+def make_data_dict(path):
+	data_dict = {}
+	
+	for name in os.listdir(path):
+		name_path = os.path.join(path, name)
 
-def load_directory(directory):
-    for file in os.listdir(directory):
-        print(file)
+		dataset_name = name.split(".")[0]
+		data_dict[dataset_name] = pd.DataFrame(np.load(name_path))
 
-train_df = load_directory('data/train')
+	return data_dict
+
+labeled_anomalies = pd.read_csv(os.path.join("datasets", "labeled_anomalies.csv"))
+
+train = make_data_dict(os.path.join("datasets", "train"))
+test = make_data_dict(os.path.join("datasets", "test"))
