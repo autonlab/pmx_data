@@ -12,7 +12,7 @@ This repository is to help researchers start working on predictive maintenance q
 |--------------|------------------|---------------|---------------|-------------------|
 | telemanom  | Telemetry data from 2 spacecraft with labeled anomalies in the testing set | Supervised Anomaly Detection  |  https://s3-us-west-2.amazonaws.com/telemanom/data.zip | https://github.com/khundman/telemanom   |
 | turbofan  | Multidimensional sensor data from simulated run to failure experiments   | Time to event prediction  | https://www.kaggle.com/datasets/behrad3d/nasa-cmaps  |   |
-| gearbox   | Bench test gearbox with 7 induced faults to detect in 3 channel, high frequency timeseries | Fault Detection  | https://c3.ndc.nasa.gov/dashlink/resources/997/  |   |
+| gearbox_fault_detection   | Bench test gearbox with 7 induced faults to detect in 3 channels, high frequency timeseries | Fault Detection  | https://c3.ndc.nasa.gov/dashlink/resources/997/  |   |
 | prediction_of_downtime_duration | Predicting downtime duration of car manufacturing assembly lines | Time to event prediction | https://github.com/aayanmaity/Predicting-the-downtime-duration-of-a-factory |  |
 | cnc_mill_tool_wear | Time series machining data across 18 CNC milling experiments | Fault Detection | https://www.kaggle.com/datasets/shasun/tool-wear-detection-in-cnc-mill |  |
 | diesel_engine_faults | Diesel engine data from failure scenarios across 4 operating states | Fault Detection | https://data.mendeley.com/datasets/k22zxz29kr/1 |  |
