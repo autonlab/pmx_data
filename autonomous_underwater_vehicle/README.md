@@ -3,12 +3,12 @@
 The dataset consists of 1225 data samples for 5 fault types (labels).
 The dataset comes from the Haizhe which is a small autonomous underwater quadrotor vehicle. This machine consists of 4 brushless motors, 4 propellers, 4 electronic speed control, 1 depth sensor, 1 nine-axis inertial measurement unit and 1 microcontroller unit.
 
-The dataset is divided into 2 folders, test data and train data. Each of these subfolders contains 5 sunfolders with .csv files corresponding to the 5 fault types:
-- AddWeight that corresponds to load increase (what is a fault type)
-- Normal - means the normal state
-- PressureGain constant - contains data that corresponds to failure of the depth sensor
-- PropellerDamage bad - that subfolder contains that that corresponds to severe damage to the propeller
-- PropellerDamage slight - which corresponds to slight damage to the propeller.
+The dataset is divided into 2 folders, test data and train data. Each of these subfolders contains 5 subfolders with .csv files corresponding to the 5 fault types:
+- Normal - no fault
+- AddWeight - load increase
+- PressureGain constant - failure of the depth sensor
+- PropellerDamage slight - slight damage to the propeller
+- PropellerDamage bad - severe damage to the propeller
 
 Each of the fault type subfolders described above, contains state data recordings of the machine over a certain period of time. The name of fault type subfolder represents the true label of the sample.
 
@@ -38,39 +38,51 @@ Dataset can be used to validate a model-free fault diagnosis method (the method 
 The dataset originally comes from the Mendeley Data website and is available via the following link: https://data.mendeley.com/datasets/7rp2pmr6mx/1
 
 If you use this dataset for your research please cite it with:
-
-~~~
-% The entry below contains non-ASCII chars that could not be converted
-% to a LaTeX equivalent.
-@MISC{Ji2021-qt,
-  title     = "Autonomous underwater vehicle fault diagnosis dataset",
-  author    = "Ji, Daxiong",
-  abstract  = "The dataset contains 1225 data samples for 5
-               \textbackslashtextit\{fault types\} (labels). We divided the
-               dataset into the training set and the test set through random
-               stratified sampling. The test set accounted for $20\%$ of the
-               total dataset. Our experimental subject is `Haizhe', which is a
-               small quadrotor AUV developed in the laboratory. For each
-               \textbackslashtextit\{fault type\}, `Haizhe' was tested several
-               times. For each time, `Haizhe' ran the same program and sailed
-               underwater for 10-20 seconds to ensure that
-               \textbackslashtextit\{state data\} was long enough. The
-               \textbackslashtextit\{state data\} recorded in each test were
-               then used as a data sample, and the corresponding
-               \textbackslashtextit\{fault type\} was the true label of the
-               data sample. The dataset was used to validate a model-free fault
-               diagnosis method proposed in our paper published in Ocean
-               Engineering（Model-free fault diagnosis for autonomous underwater
-               vehicles using sequence convolutional neural network, Ocean
-               Engineering. 232(2021)108874.
-               https://doi.org/10.1016/j.oceaneng.2021.108874）.",
-  publisher = "Mendeley",
-  year      =  2021
+@misc{https://doi.org/10.17632/7rp2pmr6mx.1,
+  doi = {10.17632/7RP2PMR6MX.1},
+  url = {https://data.mendeley.com/datasets/7rp2pmr6mx/1},
+  author = {Ji,  Daxiong},
+  keywords = {System Fault Diagnosis,  AUV Control},
+  title = {Autonomous Underwater Vehicle Fault Diagnosis Dataset},
+  publisher = {Mendeley},
+  year = {2021}
 }
-~~~
 
-Citation and references to the papers that uses this data and which can be very useful for the additional sources about the data and projects performed using this dataset:
-1. Ji D., Wang R., Zhai Y., Gu H. Dynamic modeling of quadrotor AUV using a novel CFD simulation. Ocean Eng. 2021;237:109651. doi: 10.1016/j.oceaneng.2021.109651.
-2. Ji D., Yao X., Li S., Tang Y., Tian Y. Model-free fault diagnosis for autonomous underwater vehicles using sequence convolutional neural network. Ocean Eng. 2021;232:108874. doi: 10.1016/j.oceaneng.2021.108874.
-3. Ji D, Yao X, Li S, Tang Y, Tian Y. Autonomous underwater vehicle fault diagnosis dataset. Data Brief. 2021 Oct 14;39:107477. doi: 10.1016/j.dib.2021.107477. PMID: 34712754; PMCID: PMC8529076.
+Papers that use this dataset:
+@article{Ji2021,
+  doi = {10.1016/j.oceaneng.2021.109651},
+  url = {https://doi.org/10.1016/j.oceaneng.2021.109651},
+  year = {2021},
+  month = oct,
+  publisher = {Elsevier {BV}},
+  volume = {237},
+  pages = {109651},
+  author = {Daxiong Ji and Rui Wang and Yangyang Zhai and Haitao Gu},
+  title = {Dynamic modeling of quadrotor {AUV} using a novel {CFD} simulation},
+  journal = {Ocean Engineering}
+}
+@article{Ji2021,
+  doi = {10.1016/j.oceaneng.2021.108874},
+  url = {https://doi.org/10.1016/j.oceaneng.2021.108874},
+  year = {2021},
+  month = jul,
+  publisher = {Elsevier {BV}},
+  volume = {232},
+  pages = {108874},
+  author = {Daxiong Ji and Xin Yao and Shuo Li and Yuangui Tang and Yu Tian},
+  title = {Model-free fault diagnosis for autonomous underwater vehicles using sequence Convolutional Neural Network},
+  journal = {Ocean Engineering}
+}
+@article{Ji2021,
+  doi = {10.1016/j.dib.2021.107477},
+  url = {https://doi.org/10.1016/j.dib.2021.107477},
+  year = {2021},
+  month = dec,
+  publisher = {Elsevier {BV}},
+  volume = {39},
+  pages = {107477},
+  author = {Daxiong Ji and Xin Yao and Shuo Li and Yuangui Tang and Yu Tian},
+  title = {Autonomous underwater vehicle fault diagnosis dataset},
+  journal = {Data in Brief}
+}
 
