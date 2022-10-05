@@ -13,4 +13,8 @@ tail -n +21 aps_failure_training_set.csv > train.csv
 rm aps_failure_test_set.csv
 rm aps_failure_training_set.csv
 
+#replace "na" missing values with nothing
+sed -i 's/na//g' test.csv
+sed -i 's/na//g' train.csv
+
 cd ..
