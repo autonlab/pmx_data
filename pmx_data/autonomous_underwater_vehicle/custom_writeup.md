@@ -1,8 +1,3 @@
-# DATASET DESCRIPTION
-
-| Size (GB) | Features | Rows |
-| --------- | -------- | ---- |
-| 0.025     | 17       | 1225 |
 The dataset consists of 1225 data samples for 5 fault types (labels).
 The dataset comes from the Haizhe which is a small autonomous underwater quadrotor vehicle. This machine consists of 4 brushless motors, 4 propellers, 4 electronic speed control, 1 depth sensor, 1 nine-axis inertial measurement unit and 1 microcontroller unit.
 
@@ -35,16 +30,3 @@ Each csv has 17 different columns:
 17. w_yaw: The angular velocity (in degrees/s) of rotation around the z-axis in the body coordinate frame, measured by nine-axis IMU.
 
 Dataset can be used to validate a model-free fault diagnosis method (the method is proposed in the paper titled Model-free fault diagnosis for autonomous underwater vehicles using sequence convolutional neural network. The citation is contained in the sources file in Documentation folder).
-# SOURCES
-
-If you use this dataset for your research please cite it with:
-
-@misc{https://doi.org/10.17632/7rp2pmr6mx.1, doi = {10.17632/7RP2PMR6MX.1}, url = {https://data.mendeley.com/datasets/7rp2pmr6mx/1}, author = {Ji, Daxiong}, keywords = {System Fault Diagnosis, AUV Control}, title = {Autonomous Underwater Vehicle Fault Diagnosis Dataset}, publisher = {Mendeley}, year = {2021} }
-
-Papers that use this dataset:
-
-@article{Ji_2021, doi = {10.1016/j.oceaneng.2021.109651}, url = {https://doi.org/10.1016%2Fj.oceaneng.2021.109651}, year = 2021, month = {oct}, publisher = {Elsevier {BV}}, volume = {237}, pages = {109651}, author = {Daxiong Ji and Rui Wang and Yangyang Zhai and Haitao Gu}, title = {Dynamic modeling of quadrotor {AUV} using a novel {CFD} simulation}, journal = {Ocean Engineering} }
-
-@article{Ji_2021, doi = {10.1016/j.oceaneng.2021.108874}, url = {https://doi.org/10.1016%2Fj.oceaneng.2021.108874}, year = 2021, month = {jul}, publisher = {Elsevier {BV}}, volume = {232}, pages = {108874}, author = {Daxiong Ji and Xin Yao and Shuo Li and Yuangui Tang and Yu Tian}, title = {Model-free fault diagnosis for autonomous underwater vehicles using sequence Convolutional Neural Network}, journal = {Ocean Engineering} }
-
-@article{Ji_2021, doi = {10.1016/j.dib.2021.107477}, url = {https://doi.org/10.1016%2Fj.dib.2021.107477}, year = 2021, month = {dec}, publisher = {Elsevier {BV}}, volume = {39}, pages = {107477}, author = {Daxiong Ji and Xin Yao and Shuo Li and Yuangui Tang and Yu Tian}, title = {Autonomous underwater vehicle fault diagnosis dataset}, journal = {Data in Brief} }

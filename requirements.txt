@@ -1,5 +1,8 @@
 pandas
+numpy
 kaggle
 scipy
+snakemd
+pyyaml
 
 unrar (command-line tool, not installable through pip)
