@@ -1,0 +1,4 @@
+name: 'plant_fault_detection'
+description: 'Time series measurement from 70 plants with 6 fault types'
+problem_type: 'Fault detection'
+location: 'https://github.com/robot007/PHM15'

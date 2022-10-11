@@ -1,0 +1,4 @@
+name: 'predictive_maintenance_fault_classification'
+description: 'Sensor data from a drill press under induced fault conditions'
+problem_type: 'Fault detection and classification'
+location: 'https://github.com/nagdevAmruthnath/Predictive-Maintenance'

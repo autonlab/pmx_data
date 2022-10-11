@@ -1,0 +1,4 @@
+name: 'pump_sensor'
+description: 'Time series sensor readings from a water pump with status'
+problem_type: 'Anomaly detection'
+location: 'https://www.kaggle.com/datasets/nphantawee/pump-sensor-data'

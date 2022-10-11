@@ -1,0 +1,4 @@
+name: 'electrical_fault_detection'
+description: 'Line currents and voltages of electrical system with 4 fault conditions'
+problem_type: 'Fault Detection and Classification'
+location: 'https://www.kaggle.com/datasets/esathyaprakash/electrical-fault-detection-and-classification'

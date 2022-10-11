@@ -1,0 +1,4 @@
+name: 'one_year_industrial_component_degradation'
+description: 'High-frequency time series data documentating degradation of an industrial component over the course of a year'
+problem_type: 'Time to failure prediction'
+location: 'https://www.kaggle.com/datasets/inIT-OWL/one-year-industrial-component-degradation'

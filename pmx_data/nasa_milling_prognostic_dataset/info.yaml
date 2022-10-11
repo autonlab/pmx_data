@@ -1,0 +1,4 @@
+name: 'nasa_milling_prognostic_dataset'
+description: 'Investigating wear on a milling machine under several runs in various operating conditions'
+problem_type: 'Fault Detection'
+location: 'https://www.kaggle.com/datasets/vinayak123tyagi/milling-data-set-prognostic-data'

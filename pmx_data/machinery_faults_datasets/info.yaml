@@ -1,0 +1,4 @@
+name: 'machinery_faults_datasets'
+description: 'Extremely large dataset of simulated time series machinery data with 6 operating states, each of which can have several fault types'
+problem_type: 'Fault classification'
+location: 'http://www02.smt.ufrj.br/~offshore/mfs/page_01.html'
