@@ -18,7 +18,7 @@ jobs:
         python-version: 3.9
         
     - name: Download required libraries
-      run: pip install snakemd yaml
+      run: pip install snakemd pyyaml
         
     - name: Generate README
       run: python generate_readme.py
