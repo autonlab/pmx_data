@@ -1,0 +1,33 @@
+name: generate-readme
+run-name: Generate README
+on:
+  push:
+    paths:
+      - 'pmx_data/**.ya?ml'
+      - 'generate_readme.py'
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout repo 
+      uses: actions/checkout@v2
+        
+    - name: Set up Python 3.9
+      uses: actions/setup-python@v2
+      with:
+        python-version: 3.9
+        
+    - name: Download required libraries
+      run: pip install snakemd yaml
+        
+    - name: Generate README
+      run: python generate_readme.py
+
+    - name: Commit README
+      continue-on-error: true
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git add .
+        git commit -m "Regenerated README"
+        git push
