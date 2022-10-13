@@ -127,3 +127,6 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# Ignore any downloaded data files
+/pmx_data/*/datasets/**
