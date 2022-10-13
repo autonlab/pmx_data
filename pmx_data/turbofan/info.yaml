@@ -2,3 +2,4 @@ name: 'turbofan'
 description: 'Multidimensional sensor data from simulated run to failure experiments'
 problem_type: 'Time to event prediction'
 location: 'https://www.kaggle.com/datasets/behrad3d/nasa-cmaps'
+equipment_type: "Aircraft"

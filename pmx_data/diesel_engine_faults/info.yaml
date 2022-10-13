@@ -2,3 +2,4 @@ name: 'diesel_engine_faults'
 description: 'Diesel engine data from failure scenarios across 4 operating states'
 problem_type: 'Fault Detection'
 location: 'https://data.mendeley.com/datasets/k22zxz29kr/1'
+equipment_type: "Engines"

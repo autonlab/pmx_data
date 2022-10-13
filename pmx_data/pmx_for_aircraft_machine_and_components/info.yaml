@@ -2,3 +2,4 @@ name: 'pmx_for_aircraft_machine_and_components'
 description: 'telemetry time series data and maintenance records for aircraft'
 problem_type: 'Time to failure prediction'
 location: 'https://www.kaggle.com/datasets/arnabbiswas1/microsoft-azure-predictive-maintenance'
+equipment_type: "Aircraft"

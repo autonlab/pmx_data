@@ -2,3 +2,4 @@ name: 'gearbox_fault_diagnosis'
 description: 'Vibration measurements from healthy and faulty gearboxes with varying loads and recoring frequencies'
 problem_type: 'Fault detection'
 location: 'https://www.kaggle.com/datasets/brjapon/gearbox-fault-diagnosis'
+equipment_type: "Gearboxes & Mechanisms"

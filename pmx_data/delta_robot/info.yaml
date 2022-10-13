@@ -2,3 +2,4 @@ name: 'delta_robot'
 description: 'Time series sensor data for a robot used in a production line'
 problem_type: 'Anomaly detection'
 location: 'https://data.mendeley.com/datasets/fddp3dvvzr'
+equipment_type: "Robotics"

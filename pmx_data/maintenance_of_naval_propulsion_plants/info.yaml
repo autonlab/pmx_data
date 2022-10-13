@@ -2,3 +2,4 @@ name: 'maintenance_of_naval_propulsion_plants'
 description: 'Synthetic gas turbine data'
 problem_type: 'Time to failure prediction'
 location: 'https://archive.ics.uci.edu/ml/datasets/Condition+Based+Maintenance+of+Naval+Propulsion+Plants'
+equipment_type: "Maritime"

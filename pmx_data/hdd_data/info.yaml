@@ -2,3 +2,4 @@ name: 'hdd_data'
 description: '2013 BlackBlaze hard drive failure data'
 problem_type: 'Time to failure prediction'
 location: 'https://www.backblaze.com/b2/hard-drive-test-data.html'
+equipment_type: "Computer HW & IOT"
