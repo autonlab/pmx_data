@@ -1,0 +1,5 @@
+name: 'maintnet'
+description: 'Maintenance action write-ups for aircraft, automotive, and facility domains'
+problem_type: 'Language model, event forecasting'
+location: 'https://people.rit.edu/fa3019/MaintNet/'
+equipment_type: "Aircraft, automotives, and facility"
