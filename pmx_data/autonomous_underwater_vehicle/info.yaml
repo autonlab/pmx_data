@@ -4,8 +4,8 @@ sizegb: .025
 features: 17
 rows: 1225
 approx_time_series_length: 200
-data_type: "time_series"
-problem_type: "supervised_fault_classification"
+data_type: "Time Series"
+problem_type: "Fault Classification"
 equipment_type: "maritime"
 location: "https://data.mendeley.com/datasets/7rp2pmr6mx/1"
 note: "requires unrar"

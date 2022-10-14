@@ -25,15 +25,17 @@ with open("info.yaml", "r") as infofile:
     info = yaml.safe_load(infofile)
 
 headerdoc = snakemd.new_doc("headerdoc")
-headerdoc.add_header("DATASET DESCRIPTION")
+headerdoc.add_header("Dataset Description")
 
 headerdoc.add_table(
-    ["Size (GB)", "Features", "Rows"],
-    [[info['sizegb'], info['features'], info['rows']]]
+    ["Size (GB)", "Features", "Rows", "Notes"],
+    [[info['sizegb'], info['features'], info['rows'], info['note']]]
 )
 
+headerdoc.add_horizontal_rule()
+
 sourcesdoc = snakemd.new_doc("sourcesdoc")
-sourcesdoc.add_header("SOURCES")
+sourcesdoc.add_header("Sources")
 sourcesdoc.add_paragraph("If you use this dataset for your research please cite it with:")
 sourcesdoc.add_paragraph(doi2bib(info['data_doi']))
 sourcesdoc.add_paragraph("Papers that use this dataset:")

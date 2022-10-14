@@ -1,8 +1,10 @@
-# DATASET DESCRIPTION
+# Dataset Description
 
-| Size (GB) | Features | Rows |
-| --------- | -------- | ---- |
-| 0.025     | 17       | 1225 |
+| Size (GB) | Features | Rows | Notes          |
+| --------- | -------- | ---- | -------------- |
+| 0.025     | 17       | 1225 | requires unrar |
+
+---
 The dataset consists of 1225 data samples for 5 fault types (labels).
 The dataset comes from the Haizhe which is a small autonomous underwater quadrotor vehicle. This machine consists of 4 brushless motors, 4 propellers, 4 electronic speed control, 1 depth sensor, 1 nine-axis inertial measurement unit and 1 microcontroller unit.
 
@@ -35,7 +37,7 @@ Each csv has 17 different columns:
 17. w_yaw: The angular velocity (in degrees/s) of rotation around the z-axis in the body coordinate frame, measured by nine-axis IMU.
 
 Dataset can be used to validate a model-free fault diagnosis method (the method is proposed in the paper titled Model-free fault diagnosis for autonomous underwater vehicles using sequence convolutional neural network. The citation is contained in the sources file in Documentation folder).
-# SOURCES
+# Sources
 
 If you use this dataset for your research please cite it with:
 
