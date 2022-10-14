@@ -1,12 +1,12 @@
 name: "Air pressure system failures in Scania trucks."
 description: "Classifying whether truck failure is a result of its air pressure system"
-sizeGB: .054
+sizegb: .054
 features: 171
 rows: 76000
 target: "class"
 missing_data: True
-data_type: "tabular"
-problem_type: "classification"
+data_type: "Tabular"
+problem_type: "Failure Classification"
 equipment_type: "land_vehicles"
 note: ""
 location: "https://archive.ics.uci.edu/ml/datasets/APS+Failure+at+Scania+Trucks"
