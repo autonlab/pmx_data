@@ -32,11 +32,12 @@ for dirname in os.listdir("pmx_data"):
     description = safe_info_lookup(info, "description")
     problems = safe_info_lookup(info, "problem_type")
     equipment = safe_info_lookup(info, "equipment_type")
+    note = safe_info_lookup(info, "note")
 
-    infoTable = infoTable + [[name, description, problems, equipment]]
+    infoTable = infoTable + [[name, description, problems, equipment, note]]
 
 readme.add_table(
-    ["**Dataset**", "**Description**", "**Problems**", "**Equipment Type**"],
+    ["**Dataset**", "**Description**", "**Problems**", "**Equipment Type**", "**Note**"],
     infoTable
 )
 
