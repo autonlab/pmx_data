@@ -6,3 +6,5 @@ rm 7rp2pmr6mx-1.zip
 unrar x Dataset.rar
 rm Dataset.rar
 mv Dataset datasets
+
+python create_summary_csv.py
