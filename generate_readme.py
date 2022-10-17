@@ -45,7 +45,8 @@ readme.add_header("Adding a dataset")
 readme.add_paragraph("The minimum requirements to add a dataset to this repository are:")
 readme.add_ordered_list([
     "Create a directory for the data.",
-    "Write an 'info.yaml' file containing basic information about your dataset that will be used to generate a README (see existing datasets for examples).",
+    "Write an 'info.yaml' file containing basic information about your dataset that will be used to generate a README (see [sample_info.yaml](https://github.com/autonlab/pmx_data/blob/main/sample_scripts/sample_info.yaml) for examples).",
+    "Optional: write a 'custom_writeup.md' markdown file containing any information about your dataset that is not encapsulated by info.yaml.  This will be added to the generated README."
     "Write a 'get_data.sh' script to download the data and unpack it into a standard csv format.",
     "Write a 'load_data.py' sample script to load the data into a pandas dataframe."
 ])
