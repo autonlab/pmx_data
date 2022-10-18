@@ -1,17 +1,28 @@
 name: "Air pressure system failures in Scania trucks."
 description: "Classifying whether truck failure is a result of its air pressure system"
+equipment_type: "land_vehicles"
+
+data_type: "Tabular"
+problem_type: "Failure Classification"
+
 sizegb: .054
+
+location: "https://archive.ics.uci.edu/ml/datasets/APS+Failure+at+Scania+Trucks"
+data_citation: "Dua, D. and Graff, C. (2019). UCI Machine Learning Repository [http://archive.ics.uci.edu/ml]. Irvine, CA: University of California, School of Information and Computer Science."
+
+license_name: "GPL 2.0"
+license_link: "https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html"
+
+ml_performance_benchmarks:
+  - source_name: "AutonML"
+    source_link: "autonml.readthedocs.io"
+    algorithm_used: "Random Forest"
+    benchmark: 0.989
+    metric: "ROC AUC"
+
+papers_doi: {"10.1109/ICAIS53314.2022.9742716", "10.1007/978-3-319-46349-0_36"}
+
 features: 171
 rows: 76000
 target: "class"
 missing_data: True
-data_type: "Tabular"
-problem_type: "Failure Classification"
-equipment_type: "land_vehicles"
-note: ""
-location: "https://archive.ics.uci.edu/ml/datasets/APS+Failure+at+Scania+Trucks"
-license: "https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html"
-data_citation: "Dua, D. and Graff, C. (2019). UCI Machine Learning Repository [http://archive.ics.uci.edu/ml]. Irvine, CA: University of California, School of Information and Computer Science."
-papers_doi: {"10.1109/ICAIS53314.2022.9742716", "10.1007/978-3-319-46349-0_36"}
-autonml_benchmark: 0.989
-autonml_benchmark_metric: "ROC AUC"

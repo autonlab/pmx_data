@@ -8,9 +8,9 @@ Problem type: Tabular Failure Classification
 
 ## Performance Benchmarks
 
-| Benchmark | Metric  | Source  |
-| --------- | ------- | ------- |
-| 0.989     | ROC AUC | AutonML |
+| Benchmark | Metric  | Source                            | Algorithm Used |
+| --------- | ------- | --------------------------------- | -------------- |
+| 0.989     | ROC AUC | [AutonML](autonml.readthedocs.io) | Random Forest  |
 
 ---
 

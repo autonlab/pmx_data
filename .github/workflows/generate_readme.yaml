@@ -1,4 +1,4 @@
-name: generate-readme
+name: generate_readme
 run-name: Generate README
 on:
   push:

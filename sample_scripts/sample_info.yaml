@@ -25,8 +25,7 @@ license_link: "https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html"
 
 ml_performance_benchmarks:
   - source_name: "Name of AutoML tool or paper"
-    source_link: "Link to AutoML tool if applicable"
-    source_doi: "doi of paper if applicable"
+    source_link: "Link to AutoML tool or paper if applicable"
     algorithm_used: "Name of algorithm"
     benchmark: 42
     metric: "metric used to measure benchmark performance"
