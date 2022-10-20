@@ -6,21 +6,21 @@ This dataset contains images of the internal electrical wiring system of a deskt
 # DATASET DESCRIPTION
 
 The dataset contains two folders:
-*images
-*labels
+- images
+- labels
 
 And one .txt file:
-*notes
+- notes
 
 The images folder contains three folders of images that were used to train the original model.
-*test01
-*train01
-*val01
+- test01
+- train01
+- val01
 
 The labels folder contains three folders of label coordinates representing the hand-labeled bounding boxes corresponding to image:
-*test01
-*train01
-*val01
+- test01
+- train01
+- val01
 
 The notes.txt file contains the original test/val image set splits.
 
