@@ -1,6 +1,6 @@
 # FAULT DETECTION OF ELECTRICAL WIRING SYSTEMS
 
-This dataset contains images of the internal electrical wiring system of a desktop computer and hand-labeled coordinates of faults introduced to the system.
+This dataset contains images of the internal electrical wiring system of a desktop computer and hand-labeled coordinates of faults introduced to the system. This dataset is formatted ready for input into a yolov5 model.
 
 
 # DATASET DESCRIPTION
