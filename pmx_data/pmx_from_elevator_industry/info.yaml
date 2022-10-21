@@ -1,5 +1,5 @@
-name: 'pmx_from_elevator_industry'
-description: 'Data on elevator ball bearing wear'
-problem_type: 'Time to failure prediction'
-location: 'https://zenodo.org/record/3653909#.YsmqoC8Rrys'
-equipment_type: "Tools & Machinery"
+description: Data on elevator ball bearing wear
+equipment_type: Tools & Machinery
+location: https://zenodo.org/record/3653909#.YsmqoC8Rrys
+name: pmx from elevator industry
+problem_type: Time to failure prediction

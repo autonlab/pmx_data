@@ -1,5 +1,6 @@
-name: 'gearbox_fault_detection'
-description: 'Bench test gearbox with 7 induced faults to detect in 3 channels, high frequency timeseries'
-problem_type: 'Fault Detection'
-location: 'https://c3.ndc.nasa.gov/dashlink/resources/997/'
-equipment_type: "Gearboxes & Mechanisms"
+description: Bench test gearbox with 7 induced faults to detect in 3 channels, high
+  frequency timeseries
+equipment_type: Gearboxes & Mechanisms
+location: https://c3.ndc.nasa.gov/dashlink/resources/997/
+name: gearbox fault detection
+problem_type: Fault Detection

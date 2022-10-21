@@ -1,5 +1,5 @@
-name: 'solar_power_generation'
-description: 'Power generation and weather data for 2 solar power plants'
-problem_type: 'Fault detection'
-location: 'https://www.kaggle.com/datasets/anikannal/solar-power-generation-data'
-equipment_type: "Electrical"
+description: Power generation and weather data for 2 solar power plants
+equipment_type: Electrical
+location: https://www.kaggle.com/datasets/anikannal/solar-power-generation-data
+name: solar power generation
+problem_type: Fault detection

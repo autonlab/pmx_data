@@ -1,5 +1,5 @@
-name: 'production_plant_data_for_condition_monitoring'
-description: 'Sensor data from 8 run-to-failure experiements on a production line component'
-problem_type: 'Time to failure prediction'
-location: 'https://www.kaggle.com/datasets/inIT-OWL/production-plant-data-for-condition-monitoring'
-equipment_type: "Tools & Machinery"
+description: Sensor data from 8 run-to-failure experiements on a production line component
+equipment_type: Tools & Machinery
+location: https://www.kaggle.com/datasets/inIT-OWL/production-plant-data-for-condition-monitoring
+name: production plant data for condition monitoring
+problem_type: Time to failure prediction

@@ -1,40 +1,26 @@
-generate_readme: True
-
-name: "Predictive Maintenance for Electrical Wiring Faults"
-description: "A dataset to support automatic optical inspection tool for electrical components using computer vision."
-equipment_type: "Electrical"
-#choose 1 of: ['Tools & Machinery', 'Engines', 'Aircraft', 'Maritime', "Computer Hardware & IoT", "Land Vehicles", "Electrical", "Gearboxes & Mechanisms", "Sensors", "Batteries", "Robotics"] or update this comment if you would like to add another.
-
-data_type: "Image"
-#choose 1 of: ["Tabular", "Time Series", "Text", "Image"] or update this comment if you would like to add another.
-problem_type: "Fault Detection"
-#choose 1 of: ["Fault Detection", "Diagnostics / Fault Classification", "RUL Estimation", "Degradation State Estimation", "Anomaly Detection"] or update this comment if you would like to add another.
-
-note: "Data is structured to be ready to used by a yolov5 network."
-#anything unusual about the format of the data that a user might want to know
-
-sizegb: 0.8195
-#size in GB of dataset after get_data.sh is run
-
-location: "https://data.mendeley.com/datasets/g6rbmc2ggc"
-data_doi: "10.17632/g6rbmc2ggc.1"
-#or, if you don't have a doi:
-data_citation: "Edman, Rob; Babb, Aleeya (2022), “Predictive Maintenance for Electrical Wiring Faults”, Mendeley Data, V1, doi: 10.17632/g6rbmc2ggc.1"
-
-#if the data has a license (example: GPL 2.0):
-license_name: "CC BY 4.0"
-license_link: "https://creativecommons.org/licenses/by/4.0/"
-
-ml_performance_benchmarks:
-  - source_name: "Automated Optical Inspection of Electrical Wiring Systems"
-    algorithm_used: "Yolov5"
-    benchmark: 0.989
-    metric: "Overall precision"
-
-#only use text citation for papers where you dont have a doi
-papers_with_no_doi: ["Aleeya Babb, Robert Edman, Nicholas Gisolfi, Keith Dufendach and Artur Dubrawski, Automated Optical Inspection of Electrical Wiring System"]
-
-#the following does not apply to all datasets
+data_citation: "Edman, Rob; Babb, Aleeya (2022), \u201CPredictive Maintenance for\
+  \ Electrical Wiring Faults\u201D, Mendeley Data, V1, doi: 10.17632/g6rbmc2ggc.1"
+data_doi: 10.17632/g6rbmc2ggc.1
+data_type: Image
+description: A dataset to support automatic optical inspection tool for electrical
+  components using computer vision.
+equipment_type: Electrical
 features: 1
+generate_readme: true
+license_link: https://creativecommons.org/licenses/by/4.0/
+license_name: CC BY 4.0
+location: https://data.mendeley.com/datasets/g6rbmc2ggc
+missing_data: false
+ml_performance_benchmarks:
+- algorithm_used: Yolov5
+  benchmark: 0.989
+  metric: Overall precision
+  source_name: Automated Optical Inspection of Electrical Wiring Systems
+name: Predictive Maintenance for Electrical Wiring Faults
+note: Data is structured to be ready to used by a yolov5 network.
+papers_with_no_doi:
+- Aleeya Babb, Robert Edman, Nicholas Gisolfi, Keith Dufendach and Artur Dubrawski,
+  Automated Optical Inspection of Electrical Wiring System
+problem_type: Fault Detection
 rows: 300
-missing_data: False
+sizegb: 0.8195

@@ -1,5 +1,5 @@
-name: 'prediction_of_downtime_duration'
-description: 'Predicting downtime duration of car manufacturing assembly lines'
-problem_type: 'Time to event prediction'
-location: 'https://github.com/aayanmaity/Predicting-the-downtime-duration-of-a-factory'
-equipment_type: "Tools & Machinery"
+description: Predicting downtime duration of car manufacturing assembly lines
+equipment_type: Tools & Machinery
+location: https://github.com/aayanmaity/Predicting-the-downtime-duration-of-a-factory
+name: prediction of downtime duration
+problem_type: Time to event prediction

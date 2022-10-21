@@ -1,5 +1,6 @@
-name: 'telemanom'
-description: 'Telemetry data from 2 spacecraft with labeled anomalies in the testing set'
-problem_type: 'Supervised Anomaly Detection'
-location: 'https://s3-us-west-2.amazonaws.com/telemanom/data.zip'
-equipment_type: "Robotics"
+description: Telemetry data from 2 spacecraft with labeled anomalies in the testing
+  set
+equipment_type: Robotics
+location: https://s3-us-west-2.amazonaws.com/telemanom/data.zip
+name: telemanom
+problem_type: Supervised Anomaly Detection

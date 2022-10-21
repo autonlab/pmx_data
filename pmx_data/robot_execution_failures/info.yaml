@@ -1,5 +1,5 @@
-name: 'robot_execution_failures'
-description: 'Sensor data from a robot after 5 different types of failures'
-problem_type: 'Time to failure prediction'
-location: 'https://www.kaggle.com/datasets/prashant111/robot-execution-failures'
-equipment_type: "Robotics"
+description: Sensor data from a robot after 5 different types of failures
+equipment_type: Robotics
+location: https://www.kaggle.com/datasets/prashant111/robot-execution-failures
+name: robot execution failures
+problem_type: Time to failure prediction

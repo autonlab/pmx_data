@@ -1,5 +1,5 @@
-name: 'li-ion_battery_aging'
-description: 'Data from tests on 4 Lithium-Ion batteries cycled under random currents'
-problem_type: 'Time to failure prediction'
-location: 'https://github.com/VaibhavBhujade/RUL-of-Lithium-Ion-Battery/tree/main/CSVs'
-equipment_type: "Batteries"
+description: Data from tests on 4 Lithium-Ion batteries cycled under random currents
+equipment_type: Batteries
+location: https://github.com/VaibhavBhujade/RUL-of-Lithium-Ion-Battery/tree/main/CSVs
+name: li-ion battery aging
+problem_type: Time to failure prediction

@@ -1,5 +1,6 @@
-name: 'hydraulic_sensor_system'
-description: 'Time series sensor readings on a hydraulic test rig with target condition values'
-problem_type: 'Fault Detection and Classification'
-location: 'https://archive.ics.uci.edu/ml/datasets/Condition+monitoring+of+hydraulic+systems#'
-equipment_type: "Tools & Machinery"
+description: Time series sensor readings on a hydraulic test rig with target condition
+  values
+equipment_type: Tools & Machinery
+location: https://archive.ics.uci.edu/ml/datasets/Condition+monitoring+of+hydraulic+systems#
+name: hydraulic sensor system
+problem_type: Fault Detection and Classification

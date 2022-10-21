@@ -1,5 +1,5 @@
-name: 'cnc_mill_tool_wear'
-description: 'Time series machining data across 18 CNC milling experiments'
-problem_type: 'Fault Detection'
-location: 'https://www.kaggle.com/datasets/shasun/tool-wear-detection-in-cnc-mill'
-equipment_type: "Tools & Machinery"
+description: Time series machining data across 18 CNC milling experiments
+equipment_type: Tools & Machinery
+location: https://www.kaggle.com/datasets/shasun/tool-wear-detection-in-cnc-mill
+name: cnc mill tool wear
+problem_type: Fault Detection

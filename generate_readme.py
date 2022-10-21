@@ -30,12 +30,15 @@ for dirname in os.listdir("pmx_data"):
         info = yaml.safe_load(infofile)
 
     name = safe_info_lookup(info, "name")
+
+    namelink = "[" + name + "](https://github.com/autonlab/pmx_data/tree/main/pmx_data/" + dirname + ")"
+
     description = safe_info_lookup(info, "description")
     problems = safe_info_lookup(info, "problem_type")
     equipment = safe_info_lookup(info, "equipment_type")
     note = safe_info_lookup(info, "note")
 
-    infoTable = infoTable + [[name, description, problems, equipment, note]]
+    infoTable = infoTable + [[namelink, description, problems, equipment, note]]
 
 readme.add_table(
     ["**Dataset**", "**Description**", "**Problems**", "**Equipment Type**", "**Note**"],

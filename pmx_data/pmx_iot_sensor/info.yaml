@@ -1,5 +1,5 @@
-name: 'pmx_iot_sensor'
-description: 'Data on failure of heat exchagers on an assembly line'
-problem_type: 'Time to failure prediction'
-location: 'https://github.com/shikhilnangia/iotsensor/blob/master/iot_sensor_dataset.csv'
-equipment_type: "Tools & Machinery"
+description: Data on failure of heat exchagers on an assembly line
+equipment_type: Tools & Machinery
+location: https://github.com/shikhilnangia/iotsensor/blob/master/iot_sensor_dataset.csv
+name: pmx iot sensor
+problem_type: Time to failure prediction

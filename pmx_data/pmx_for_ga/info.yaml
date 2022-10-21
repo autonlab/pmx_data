@@ -1,5 +1,5 @@
-name: 'pmx_for_ga'
-description: 'Per-second sensor data from flights of a Cessna 172S preceeding maintenance'
-problem_type: 'Time to failure prediction'
-location: 'https://www.kaggle.com/datasets/hooong/ngafid-mc-20210917'
-equipment_type: "Aircraft"
+description: Per-second sensor data from flights of a Cessna 172S preceeding maintenance
+equipment_type: Aircraft
+location: https://www.kaggle.com/datasets/hooong/ngafid-mc-20210917
+name: pmx for ga
+problem_type: Time to failure prediction
