@@ -6,7 +6,7 @@ description: A dataset to support automatic optical inspection tool for electric
   components using computer vision.
 equipment_type: Electrical
 features: 1
-generate_readme: true
+generate_readme: false
 license_link: https://creativecommons.org/licenses/by/4.0/
 license_name: CC BY 4.0
 location: https://data.mendeley.com/datasets/g6rbmc2ggc
