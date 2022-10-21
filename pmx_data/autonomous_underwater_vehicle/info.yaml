@@ -1,16 +1,32 @@
-approx_time_series_length: 200
-data_doi: 10.17632/7RP2PMR6MX.1
-data_type: Time Series
-description: Time series measurements from an underwater vehicle with 5 fault types
-equipment_type: maritime
-features: 17
-location: https://data.mendeley.com/datasets/7rp2pmr6mx/1
+generate_readme: True
+
 name: autonomous underwater vehicle
-note: requires unrar
+description: Time series measurements from an underwater vehicle with 5 fault types
+equipment_type: Maritime
+
+data_type: Time Series
+problem_type: Fault Classification
+
+note: rar data compression
+
+sizegb: 0.025
+
+location: https://data.mendeley.com/datasets/7rp2pmr6mx/1
+data_doi: 10.17632/7RP2PMR6MX.1
+
+license_link: https://creativecommons.org/licenses/by/4.0/
+license_name: CC BY 4.0
+
 papers_doi:
 - 10.1016/j.oceaneng.2021.109651
 - 10.1016/j.oceaneng.2021.108874
 - 10.1016/j.dib.2021.107477
-problem_type: Fault Classification
+
+features: 17
 rows: 1225
-sizegb: 0.025
+target_colname: "class"
+missing_data: "unknown"
+
+average_time_series_length: 200
+time_series_all_same_length: False
+

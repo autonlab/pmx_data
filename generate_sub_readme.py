@@ -44,17 +44,28 @@ def generate_sub_readme(info, dataset_path):
 
     headerdoc.add_paragraph("Problem type: " + get(info, "data_type") + " " + get(info, "problem_type"))
 
-    headerdoc.add_table(
-        ["Size (GB)", "Features", "Rows", "Contains missing data?", "Target Column", "Notes"],
-        [[
-            get(info, 'sizegb'), 
-            get(info, 'features'), 
-            get(info, 'rows'), 
-            get(info, 'missing_data'), 
-            get(info, 'target'), 
-            get(info, 'note')
-        ]]
-    )
+    possibletablecols = {
+        "sizegb" : "Size (GB)",
+        "features" : "Features",
+        "rows" : "Rows",
+        "missing_data" : "Contains missing data?",
+        "target" : "Target Column",
+        "notes" : "Notes",
+        "time_series_all_same_length" : "Are all time series the same length?",
+        "average_time_series_length" : "Avg. time series length",
+        "time_series_length" : "Time series length"
+    }
+
+    tablecols = info.keys().intersection(possibletablecols.keys())
+
+    tableheader = []
+    tablebody = []
+
+    for colkey in tablecols:
+        tableheader = tableheader + [possibletablecols[colkey]]
+        tablebody = tablebody + [info[colkey]]
+
+    headerdoc.add_table(tableheader, [tablebody])
 
     if exists(info, "ml_performance_benchmarks"):
         headerdoc.add_header("Performance Benchmarks", level=2)
