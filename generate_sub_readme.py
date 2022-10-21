@@ -123,5 +123,9 @@ for name in os.listdir("pmx_data"):
             with open(infopath, "r") as infofile:
                 info = yaml.safe_load(infofile)
 
-                if get(info, "generate_readme") == True:
-                    generate_sub_readme(info, dataset_path)
+            if "generate_readme" in info.keys() and info["generate_readme"] == True:
+                generate_sub_readme(info, dataset_path)
+                info["generate_readme"] = False
+
+                with open(infopath, 'w') as infofile:
+                    yaml.dump(info, infofile)

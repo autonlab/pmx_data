@@ -1,3 +1,5 @@
+generate_readme: True
+
 name: "Predictive Maintenance for Electrical Wiring Faults"
 description: "A dataset to support automatic optical inspection tool for electrical components using computer vision."
 equipment_type: "Electrical"
