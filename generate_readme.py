@@ -11,6 +11,7 @@ def safe_info_lookup(info, key):
     return result
 
 readme = snakemd.new_doc("README")
+
 readme.add_header("Predictive and Prognostics Maintence Data Repository")
 readme.add_paragraph("Predictive Maintenance poses a number of challenges for machine learning. The general types of machine learning problems encountered in predictive maintenance are:")
 readme.add_ordered_list([
@@ -46,7 +47,7 @@ readme.add_paragraph("The minimum requirements to add a dataset to this reposito
 readme.add_ordered_list([
     "Create a directory for the data.",
     "Write an 'info.yaml' file containing basic information about your dataset that will be used to generate a README (see [sample_info.yaml](https://github.com/autonlab/pmx_data/blob/main/sample_scripts/sample_info.yaml) for examples).",
-    "Optional: write a 'custom_writeup.md' markdown file containing any information about your dataset that is not encapsulated by info.yaml.  This will be added to the generated README."
+    "Optional: write a 'custom_writeup.md' markdown file containing any information about your dataset that is not encapsulated by info.yaml.  This will be added to the generated README.",
     "Write a 'get_data.sh' script to download the data and unpack it into a standard csv format.",
     "Write a 'load_data.py' sample script to load the data into a pandas dataframe."
 ])

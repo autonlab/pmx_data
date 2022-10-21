@@ -21,7 +21,9 @@ jobs:
       run: pip install snakemd pyyaml
         
     - name: Generate README
-      run: python generate_readme.py
+      run: |
+        python generate_readme.py
+        python generate_sub_readme.py
 
     - name: Commit README
       continue-on-error: true

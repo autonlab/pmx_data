@@ -1,3 +1,7 @@
+#set this to True to tell GitHub to generate a README based on the information in this file and in custom_writeup.md
+#It will be automatically set to False after the readme is generated.  reset to True if you want to make changes.
+generate_readme: True
+
 name: "Name of Dataset"
 description: "1-sentence description of dataset"
 equipment_type: "Maritime"
