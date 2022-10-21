@@ -56,7 +56,7 @@ def generate_sub_readme(info, dataset_path):
         "time_series_length" : "Time series length"
     }
 
-    tablecols = info.keys().intersection(possibletablecols.keys())
+    tablecols = set(info.keys()).intersection(set(possibletablecols.keys()))
 
     tableheader = []
     tablebody = []
