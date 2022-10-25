@@ -3,15 +3,24 @@ run-name: Generate README
 on:
   push:
     paths:
-      - 'pmx_data/**.ya?ml'
-      - 'generate_readme.py'
+      - 'pmx_data/*/info.ya?ml'
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
     - name: Checkout repo 
       uses: actions/checkout@v2
+
+    - name: Get list of changed files  
+      uses: dorny/paths-filter@v2
+      id: filter
+      with:
+        list-files: shell
         
+      filters: |
+        info:
+          - added|modified: 'pmx_data/*/info.ya?ml'
+
     - name: Set up Python 3.9
       uses: actions/setup-python@v2
       with:
@@ -21,9 +30,11 @@ jobs:
       run: pip install snakemd pyyaml
         
     - name: Generate README
-      run: |
-        python generate_readme.py
-        python generate_sub_readme.py
+      run: python generate_readme.py
+    
+    - name: Generate sub-README
+    - if: ${{ steps.filter.outputs.info == 'true' }}
+    - run: python generate_sub_readme.py ${{ steps.filter.outputs.markdown_files }}
 
     - name: Commit README
       continue-on-error: true

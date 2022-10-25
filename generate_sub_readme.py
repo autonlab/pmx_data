@@ -3,6 +3,7 @@ import yaml
 import urllib.request
 from urllib.error import HTTPError
 import os
+import sys
 
 def doi2bib(doi):
     #adapted from https://scipython.com/blog/doi-to-bibtex/
@@ -119,6 +120,19 @@ def generate_sub_readme(info, dataset_path):
 
     headerdoc.output_page(dataset_path)
 
+
+#sys.argv[1:] should be a list of paths of changed info.yaml files
+#go thru each argument and regenerate the sub-readme for that file
+
+for infopath in sys.argv[1:]:
+    datasetpath = os.path.split(infopath)[0]
+
+    with open(infopath, "r") as infofile:
+        info = yaml.safe_load(infofile)
+
+    generate_sub_readme(info, datasetpath)
+
+'''
 #go through all the datasets
 #check if any of them have generate_readme=True set in thier info file
 #if so, regenerate their readme
@@ -140,3 +154,4 @@ for name in os.listdir("pmx_data"):
 
                 with open(infopath, 'w') as infofile:
                     yaml.dump(info, infofile)
+'''
