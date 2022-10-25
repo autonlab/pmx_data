@@ -16,9 +16,9 @@ jobs:
       id: filter
       with:
         list-files: shell
-      filters: |
-        info:
-          - added|modified: 'pmx_data/*/info.ya?ml'
+        filters: |
+          info:
+            - added|modified: 'pmx_data/*/info.ya?ml'
 
     - name: Set up Python 3.9
       uses: actions/setup-python@v2
