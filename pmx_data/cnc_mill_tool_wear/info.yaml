@@ -19,3 +19,11 @@ papers_with_no_doi:
   - "https://www.kaggle.com/code/koheimuramatsu/cnc-milling-machine-tool-wear-detection/notebook"
   - "https://github.com/SaeedShurrab/Tool-Wear-Detection-in-CNC-Milling-Operartions"
   - "https://github.com/flyinginte/toolwear_cncmilling"
+
+features: 47
+rows: 18
+target_colname: "tool_condition, machining_finalized, passed_visual_inspection"
+missing_data: False
+
+time_series_all_same_length: False
+average_time_series_length: 1500
