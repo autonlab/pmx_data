@@ -32,7 +32,7 @@ jobs:
       run: python generate_readme.py
     
     - name: Generate sub-README
-      run: python generate_sub_readme.py ${{ steps.filter.outputs.markdown_files }}
+      run: python generate_sub_readme.py ${{ steps.filter.outputs.info_files }}
 
     - name: Commit README
       continue-on-error: true
