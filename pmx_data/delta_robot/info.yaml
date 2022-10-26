@@ -1,5 +1,21 @@
+name: delta robot
 description: Time series sensor data for a robot used in a production line
 equipment_type: Robotics
+
+data_type: Time Series
+problem_type: Anomaly Detection
+
+sizegb: 0.000348
+
 location: https://data.mendeley.com/datasets/fddp3dvvzr
-name: delta robot
-problem_type: Anomaly detection
+data_doi: "10.17632/fddp3dvvzr.1"
+
+license_name: CC BY 4.0
+license_link: https://creativecommons.org/licenses/by/4.0/
+
+papers_doi:
+  - "10.3390/s21216979"
+
+papers_with_no_doi:
+  - "Laribi, M. A., L. Romdhane, and S. Zeghloul. 'Analysis and dimensional synthesis of the DELTA robot for a prescribed workspace.' Mechanism and machine theory 42.7 (2007): 859-870."
+  - "https://github.com/fathikiavash/Delta_Robot_Predictive_Maintenance"
