@@ -1,9 +1,11 @@
+from email import header
 import snakemd
 import yaml
 import urllib.request
 from urllib.error import HTTPError
 import os
 import sys
+from collections import OrderedDict
 
 def doi2bib(doi):
     #adapted from https://scipython.com/blog/doi-to-bibtex/
@@ -12,7 +14,7 @@ def doi2bib(doi):
     req = urllib.request.Request(url)
     req.add_header('Accept', 'application/x-bibtex')
     
-    bibtex = "Not found"
+    bibtex = "Not found: " + doi
     try:
         with urllib.request.urlopen(req) as f:
             bibtex = f.read().decode()
@@ -45,19 +47,19 @@ def generate_sub_readme(info, dataset_path):
 
     headerdoc.add_paragraph("Problem type: " + get(info, "data_type") + " " + get(info, "problem_type"))
 
-    possibletablecols = {
-        "sizegb" : "Size (GB)",
-        "features" : "Features",
-        "rows" : "Rows",
-        "missing_data" : "Contains missing data?",
-        "target" : "Target Column",
-        "notes" : "Notes",
-        "time_series_all_same_length" : "Are all time series the same length?",
-        "average_time_series_length" : "Avg. time series length",
-        "time_series_length" : "Time series length"
-    }
+    possibletablecols = OrderedDict([
+        ("sizegb", "Size (GB)"),
+        ("features", "Features"),
+        ("rows", "Rows"),
+        ("missing_data", "Contains missing data?"),
+        ("target", "Target Column"),
+        ("notes", "Notes"),
+        ("time_series_all_same_length", "Are all time series the same length?"),
+        ("average_time_series_length", "Avg. time series length"),
+        ("time_series_length", "Time series length")
+    ])
 
-    tablecols = set(info.keys()).intersection(set(possibletablecols.keys()))
+    tablecols = [x for x in possibletablecols.keys() if (x in info.keys())]
 
     tableheader = []
     tablebody = []
@@ -91,35 +93,46 @@ def generate_sub_readme(info, dataset_path):
             rows
         )
 
-    custom_writeup_path = os.path.join(dataset_path, "custom_writeup.md")
-    if os.path.exists(custom_writeup_path):
-        headerdoc.add_horizontal_rule()
-        with open(custom_writeup_path, 'r') as custom_writeup:
-            headerdoc.add_paragraph(custom_writeup.read())
-
-    headerdoc.add_header("Sources")
+    sourcesdoc = snakemd.new_doc("README")
+    sourcesdoc.add_header("Sources")
 
     if exists(info, 'data_doi'):
-        headerdoc.add_paragraph("If you use this dataset for your research please cite it with:")
-        headerdoc.add_paragraph(doi2bib(info['data_doi']))
-    elif exists(info, 'data_citation'):
-        headerdoc.add_paragraph("If you use this dataset for your research please cite it with:")
-        headerdoc.add_paragraph(info['data_citation'])
+        sourcesdoc.add_paragraph("If you use this dataset for your research please cite it with:")
+        sourcesdoc.add_paragraph(doi2bib(info['data_doi']))
+    elif 'data_citation' in info.keys():
+        sourcesdoc.add_paragraph("If you use this dataset for your research please cite it with:")
+        sourcesdoc.add_paragraph(info['data_citation'])
+    else:
+        sourcesdoc.add_paragraph("Data location: " + info['location'])
+        sourcesdoc.add_paragraph("No data citation available")
 
-    headerdoc.add_paragraph("Data License: [" + get(info, 'license_name') + "](" + get(info, 'license_link') + ")")
+    sourcesdoc.add_paragraph("Data License: [" + get(info, 'license_name') + "](" + get(info, 'license_link') + ")")
 
-    headerdoc.add_paragraph("Papers that use this dataset:")
+    sourcesdoc.add_paragraph("Papers that use this dataset:")
 
     if exists(info, 'papers_doi'):
         for paper_doi in info['papers_doi']:
-            headerdoc.add_paragraph(doi2bib(paper_doi))
+            sourcesdoc.add_paragraph(doi2bib(paper_doi))
 
     if exists(info, 'papers_with_no_doi'):
         for paper_citation in info['papers_with_no_doi']:
-            headerdoc.add_paragraph(paper_citation)
+            sourcesdoc.add_paragraph(paper_citation)
 
-    headerdoc.output_page(dataset_path)
+    custom_writeup_path = os.path.join(dataset_path, "custom_writeup.md")
+    if os.path.exists(custom_writeup_path):
+        sourcesdoc.add_horizontal_rule()
+        with open(custom_writeup_path, 'r') as custom_writeup:
+            output_file = "\n".join([
+                headerdoc.render(),  
+                sourcesdoc.render(),
+                custom_writeup.read()
+                ])
+    else:
+        output_file = "\n".join([headerdoc.render(), sourcesdoc.render()])
 
+    readme_path = os.path.join(dataset_path, "README.md")
+    with open(readme_path, 'w') as readme_file:
+        readme_file.write(output_file)
 
 #sys.argv[1:] should be a list of paths of changed info.yaml files
 #go thru each argument and regenerate the sub-readme for that file

@@ -9,7 +9,7 @@ equipment_type: "Maritime"
 
 data_type: "Time Series"
 #choose 1 of: ["Tabular", "Time Series", "Text", "Image"] or update this comment if you would like to add another.
-problem_type: "Fault Classification"
+problem_type: "Diagnostics / Fault Classification"
 #choose 1 of: ["Fault Detection", "Diagnostics / Fault Classification", "RUL Estimation", "Degradation State Estimation", "Anomaly Detection"] or update this comment if you would like to add another.
 
 note: "requires unrar"

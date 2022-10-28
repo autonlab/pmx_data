@@ -4,6 +4,7 @@ on:
   push:
     paths:
       - 'pmx_data/*/info.ya?ml'
+      - 'pmx_data/*/custom_writeup.md'
 jobs:
   build:
     runs-on: ubuntu-latest
