@@ -1,4 +1,4 @@
-average_time_series_length: 200
+average_time_series_length: 210
 data_doi: 10.17632/7RP2PMR6MX.1
 data_type: Time Series
 description: Time series measurements from an underwater vehicle with 5 fault types
