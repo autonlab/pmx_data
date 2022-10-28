@@ -9,18 +9,13 @@ location: https://www.kaggle.com/datasets/shasun/tool-wear-detection-in-cnc-mill
 sizegb: .011
 
 location: "https://www.kaggle.com/datasets/shasun/tool-wear-detection-in-cnc-mill"
-data_citation: "[no citation needed]"
 
 license_name: "CC0: Public Domain"
 license_link: "https://creativecommons.org/publicdomain/zero/1.0/"
 
 papers_doi: 
-  - "10.1016/j.ymssp.2005.10.010."
-  - "10.3390/s21248431."
-papers_with_no_doi: 
-  - "https://www.kaggle.com/code/koheimuramatsu/cnc-milling-machine-tool-wear-detection/notebook"
-  - "https://github.com/SaeedShurrab/Tool-Wear-Detection-in-CNC-Milling-Operartions"
-  - "https://github.com/flyinginte/toolwear_cncmilling"
+  - "10.1016/j.ymssp.2005.10.010"
+  - "10.3390/s21248431"
 
 features: 47
 rows: 18

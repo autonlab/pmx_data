@@ -87,3 +87,8 @@ For the Machine:
 * M1_CURRENT_FEEDRATE: instantaneous feed rate of spindle
 
 The last column in the experiment files is titles as Machining_Process - this column provides an information about the current machining stage being performed. There is included the information about the preparation, tracing up and down the Spindle (S) curve and involves different lanes and also repositions  of the spindle as it moves through the air to a certain starting point.
+
+Additional resources:
+"https://www.kaggle.com/code/koheimuramatsu/cnc-milling-machine-tool-wear-detection/notebook"
+"https://github.com/SaeedShurrab/Tool-Wear-Detection-in-CNC-Milling-Operartions"
+"https://github.com/flyinginte/toolwear_cncmilling"
