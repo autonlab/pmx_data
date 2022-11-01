@@ -96,7 +96,7 @@ def generate_sub_readme(info, dataset_path):
     sourcesdoc = snakemd.new_doc("README")
     sourcesdoc.add_header("Sources")
 
-    if exists(info, 'data_doi'):
+    if 'data_doi' in info.keys():
         sourcesdoc.add_paragraph("If you use this dataset for your research please cite it with:")
         sourcesdoc.add_paragraph(doi2bib(info['data_doi']))
     elif 'data_citation' in info.keys():
