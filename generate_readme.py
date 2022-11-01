@@ -59,14 +59,24 @@ readme.add_ordered_list([
     "Create a directory for the data.",
     "Write an 'info.yaml' file containing basic information about your dataset that will be used to generate a README (see [sample_info.yaml](https://github.com/autonlab/pmx_data/blob/main/sample_scripts/sample_info.yaml) for examples).",
     "Optional: write a 'custom_writeup.md' markdown file containing any information about your dataset that is not encapsulated by info.yaml.  This will be added to the generated README.",
-    "Write a 'get_data.sh' script to download the data and unpack it into a standard csv format.",
-    "Write a 'load_data.py' sample script to load the data into a pandas dataframe."
+    "Write a 'get_data.sh' script to download the data and unpack it into a standard csv format within a subfolder called 'datasets' (see [sample_get_data.sh](https://github.com/autonlab/pmx_data/blob/main/sample_scripts/sample_get_data.sh))",
+    "Write a 'load_data.py' sample script to load the data into a pandas dataframe or any other python object that is easy to work with ([this sample script](https://github.com/autonlab/pmx_data/blob/main/sample_scripts/load_data_recursive.py) works well in most instances)"
 ])
 
 readme.add_header("Additional Resources", level=2)
 readme.add_paragraph("https://data.phmsociety.org/")
+readme.add_paragraph("https://www.nasa.gov/content/prognostics-center-of-excellence-data-set-repository")
+readme.add_paragraph("https://zenodo.org/")
+readme.add_paragraph("UCI repository https://archive.ics.uci.edu/ml/datasets.php")
+readme.add_paragraph("https://www.openml.org/")
 
 readme.add_header("Wishlist", level=2)
-readme.add_paragraph("It would be good to have some visual inspection data here, a graphical data modality. I know there are people doing PMx with microscopy or aerial inspection. Not what WE do, but it certainly falls under the PMx bucket.")
+readme.add_unordered_list([
+    "More image datasets, i.e. PmX with microscopy or aerial inspection.",
+    "Tracking performance of different autoML tools on datasets over time",
+    "Support for multiple problem types on same dataset (for instance, fault detection can also be anomaly detection if you remove the target variable)",
+    "Guide to pros and cons of different data hosting services (mendeley, kaggle, etc) for people who want to upload datasets",
+    "Allow for searching for datasets with different attributes or sorting by attribute"
+])
 
 readme.output_page()
