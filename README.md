@@ -59,13 +59,25 @@ The minimum requirements to add a dataset to this repository are:
 1. Create a directory for the data.
 2. Write an 'info.yaml' file containing basic information about your dataset that will be used to generate a README (see [sample_info.yaml](https://github.com/autonlab/pmx_data/blob/main/sample_scripts/sample_info.yaml) for examples).
 3. Optional: write a 'custom_writeup.md' markdown file containing any information about your dataset that is not encapsulated by info.yaml. This will be added to the generated README.
-4. Write a 'get_data.sh' script to download the data and unpack it into a standard csv format.
-5. Write a 'load_data.py' sample script to load the data into a pandas dataframe.
+4. Write a 'get_data.sh' script to download the data and unpack it into a standard csv format within a subfolder called 'datasets' (see [sample_get_data.sh](https://github.com/autonlab/pmx_data/blob/main/sample_scripts/sample_get_data.sh))
+5. Write a 'load_data.py' sample script to load the data into a pandas dataframe or any other python object that is easy to work with ([this sample script](https://github.com/autonlab/pmx_data/blob/main/sample_scripts/load_data_recursive.py) works well in most instances)
 
 ## Additional Resources
 
 https://data.phmsociety.org/
 
+https://www.nasa.gov/content/prognostics-center-of-excellence-data-set-repository
+
+https://zenodo.org/
+
+UCI repository https://archive.ics.uci.edu/ml/datasets.php
+
+https://www.openml.org/
+
 ## Wishlist
 
-It would be good to have some visual inspection data here, a graphical data modality. I know there are people doing PMx with microscopy or aerial inspection. Not what WE do, but it certainly falls under the PMx bucket.
+- More image datasets, i.e. PmX with microscopy or aerial inspection.
+- Tracking performance of different autoML tools on datasets over time
+- Support for multiple problem types on same dataset (for instance, fault detection can also be anomaly detection if you remove the target variable)
+- Guide to pros and cons of different data hosting services (mendeley, kaggle, etc) for people who want to upload datasets
+- Allow for searching for datasets with different attributes or sorting by attribute
