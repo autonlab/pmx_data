@@ -1,0 +1,41 @@
+# Fill in information for each keyword
+# If you don't have information for a given keyword, just delete or comment out that line
+
+name: Predictive Maintenance for Electrical Wiring faults
+description: "demo description"
+equipment_type: "Aircraft"
+#choose 1 of: ['Tools & Machinery', 'Engines', 'Aircraft', 'Maritime', "Computer Hardware & IoT", 
+#         "Land Vehicles", "Electrical", "Gearboxes & Mechanisms", "Sensors", "Batteries", "Robotics"] or update this comment if you would like to add another.
+
+data_type: "Image"
+#choose 1 of: ["Tabular", "Time Series", "Text", "Image"] or update this comment if you would like to add another.
+problem_type: "Diagnostics / Fault Classification"
+#choose 1 of: ["Fault Detection", "Diagnostics / Fault Classification", "RUL Estimation", "Degradation State Estimation", "Anomaly Detection"] or update this comment if you would like to add another.
+
+note: "Dataset is structured to be ingested by a Yolov5 network"
+#anything unusual about the format of the data that a user might want to know
+
+sizegb: 0.8195
+
+location: https://data.mendeley.com/datasets/g6rbmc2ggc
+data_doi: 10.17632/g6rbmc2ggc.1
+data_citation: "Edman, Rob; Babb, Aleeya (2022), \u201CPredictive Maintenance for\
+  \ Electrical Wiring Faults\u201D, Mendeley Data, V1, doi: 10.17632/g6rbmc2ggc.1"
+
+license_name: CC BY 4.0
+license_link: https://creativecommons.org/licenses/by/4.0/
+
+ml_performance_benchmarks:
+- algorithm_used: Yolov5
+  benchmark: 0.989
+  metric: Overall precision
+  source_name: Automated Optical Inspection of Electrical Wiring Systems
+
+papers_with_no_doi:
+- Aleeya Babb, Robert Edman, Nicholas Gisolfi, Keith Dufendach and Artur Dubrawski,
+  Automated Optical Inspection of Electrical Wiring System
+
+features: 1
+rows: 300
+missing_data: false
+
