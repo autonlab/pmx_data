@@ -1,4 +1,3 @@
-from email import header
 import snakemd
 import yaml
 import urllib.request
@@ -43,7 +42,10 @@ def get(info, key):
 
 def generate_sub_readme(info, dataset_path):
     headerdoc = snakemd.new_doc("README")
-    headerdoc.add_header("Dataset Description")  
+    if 'name' in info.keys():
+        headerdoc.add_header(info['name'])
+    else:
+        headerdoc.add_header("Dataset Description")  
 
     headerdoc.add_paragraph("Problem type: " + get(info, "data_type") + " " + get(info, "problem_type"))
 
@@ -70,14 +72,18 @@ def generate_sub_readme(info, dataset_path):
 
     headerdoc.add_table(tableheader, [tablebody])
 
-    if exists(info, "ml_performance_benchmarks"):
+    if "ml_performance_benchmarks" in info.keys():
         headerdoc.add_header("Performance Benchmarks", level=2)
 
         rows = []
         for benchmark in info["ml_performance_benchmarks"]:
             
             if exists(benchmark, "source_link"):
-                name = "[" + get(benchmark, "source_name") + "](" + get(benchmark, "source_link") + ")"
+                
+                if not exists(benchmark, "source_name"):
+                    benchmark['source_name'] = "source"
+                    
+                name = "[" + benchmark["source_name"] + "](" + benchmark["source_link"] + ")"
             else:
                 name = get(benchmark, "source_name")
             
@@ -94,33 +100,44 @@ def generate_sub_readme(info, dataset_path):
         )
 
     sourcesdoc = snakemd.new_doc("README")
-    sourcesdoc.add_header("Sources")
+    sourcesdoc.add_header("Sources", level=2)
 
-    if 'data_doi' in info.keys():
+    sourcesdoc.add_paragraph("Data location: " + info['location'])
+    if 'data_citation' in info.keys():
         sourcesdoc.add_paragraph("If you use this dataset for your research please cite it with:")
-        sourcesdoc.add_paragraph(doi2bib(info['data_doi']))
-    elif 'data_citation' in info.keys():
+        sourcesdoc.add_unordered_list([info['data_citation']])
+    elif 'data_doi' in info.keys():
         sourcesdoc.add_paragraph("If you use this dataset for your research please cite it with:")
-        sourcesdoc.add_paragraph(info['data_citation'])
+        sourcesdoc.add_unordered_list([doi2bib(info['data_doi'])])
     else:
-        sourcesdoc.add_paragraph("Data location: " + info['location'])
         sourcesdoc.add_paragraph("No data citation available")
 
-    sourcesdoc.add_paragraph("Data License: [" + get(info, 'license_name') + "](" + get(info, 'license_link') + ")")
+    if 'license_name' in info.keys() and 'license_link' in info.keys():
+        sourcesdoc.add_paragraph("Data License: [" + info['license_name'] + "](" + info['license_link'] + ")")
+    elif 'license_name' in info.keys():
+        sourcesdoc.add_paragraph("Data License: " + info['license_name'])
+    elif 'license_link' in info.keys():
+        sourcesdoc.add_paragraph("Data License [here](" + info['license_link'] + ")")
+    else:
+        sourcesdoc.add_paragraph("No data license available.")
 
-    sourcesdoc.add_paragraph("Papers that use this dataset:")
+    if 'papers_doi' in info.keys() or 'papers_with_no_doi' in info.keys():
+        sourcesdoc.add_paragraph("Papers that use this dataset:")
 
-    if exists(info, 'papers_doi'):
-        for paper_doi in info['papers_doi']:
-            sourcesdoc.add_paragraph(doi2bib(paper_doi))
+        papers = []
+        if 'papers_doi' in info.keys():
+            for paper_doi in info['papers_doi']:
+                papers = papers + [doi2bib(paper_doi)]
 
-    if exists(info, 'papers_with_no_doi'):
-        for paper_citation in info['papers_with_no_doi']:
-            sourcesdoc.add_paragraph(paper_citation)
+        if 'papers_with_no_doi' in info.keys():
+            for paper_citation in info['papers_with_no_doi']:
+                papers = papers + [paper_citation]
+        
+        sourcesdoc.add_unordered_list(papers)
 
     custom_writeup_path = os.path.join(dataset_path, "custom_writeup.md")
     if os.path.exists(custom_writeup_path):
-        sourcesdoc.add_horizontal_rule()
+        sourcesdoc.add_header("Additional information", level=2)
         with open(custom_writeup_path, 'r') as custom_writeup:
             output_file = "\n".join([
                 headerdoc.render(),  
@@ -144,27 +161,3 @@ for infopath in sys.argv[1:]:
         info = yaml.safe_load(infofile)
 
     generate_sub_readme(info, datasetpath)
-
-'''
-#go through all the datasets
-#check if any of them have generate_readme=True set in thier info file
-#if so, regenerate their readme
-
-for name in os.listdir("pmx_data"):
-    dataset_path = os.path.join('pmx_data', name)
-
-    if os.path.isdir(dataset_path):
-        infopath = os.path.join(dataset_path, "info.yaml")
-
-        if os.path.exists(infopath):
-
-            with open(infopath, "r") as infofile:
-                info = yaml.safe_load(infofile)
-
-            if "generate_readme" in info.keys() and info["generate_readme"] == True:
-                generate_sub_readme(info, dataset_path)
-                info["generate_readme"] = False
-
-                with open(infopath, 'w') as infofile:
-                    yaml.dump(info, infofile)
-'''
