@@ -1,22 +1,36 @@
-average_time_series_length: 210
-data_doi: 10.17632/7RP2PMR6MX.1
-data_type: Time Series
+name: autonomous underwater vehicle
 description: Time series measurements from an underwater vehicle with 5 fault types
 equipment_type: Maritime
-features: 17
-generate_readme: false
-license_link: https://creativecommons.org/licenses/by/4.0/
-license_name: CC BY 4.0
-location: https://data.mendeley.com/datasets/7rp2pmr6mx/1
-missing_data: unknown
-name: autonomous underwater vehicle
+
+data_type: Time Series
+problem_type: Fault Classification
+
 note: rar data compression
+
+sizegb: 0.025
+
+location: https://data.mendeley.com/datasets/7rp2pmr6mx/1
+data_doi: 10.17632/7RP2PMR6MX.1
+
+license_name: CC BY 4.0
+license_link: https://creativecommons.org/licenses/by/4.0/
+
+ml_performance_benchmarks:
+  - source_name: "Model-free fault diagnosis for autonomous underwater vehicles using sequence Convolutional Neural Network"
+    source_link: "https://doi.org/10.1016%2Fj.oceaneng.2021.108874"
+    algorithm_used: "Sequence Convolutional Neural Network (SeqCNN)"
+    benchmark: 97.96
+    metric: "Accuracy"
+
 papers_doi:
 - 10.1016/j.oceaneng.2021.109651
 - 10.1016/j.oceaneng.2021.108874
 - 10.1016/j.dib.2021.107477
-problem_type: Fault Classification
+
+features: 17
 rows: 1225
-sizegb: 0.025
+missing_data: unknown
 target_colname: class
+
 time_series_all_same_length: false
+average_time_series_length: 200
