@@ -27,7 +27,7 @@ readme.add_header("List of Datasets", level=2)
 
 infoTable = []
 
-for dirname in os.listdir("pmx_data"):
+for dirname in sorted(os.listdir("pmx_data")):
 
     infopath = os.path.join("pmx_data", dirname, "info.yaml")
     with open(infopath, "r") as infofile:

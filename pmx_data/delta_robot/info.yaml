@@ -1,4 +1,4 @@
-name: delta robot
+name: Delta Robot
 description: Time series sensor data for a robot used in a production line
 equipment_type: Robotics
 
@@ -13,9 +13,17 @@ data_doi: "10.17632/fddp3dvvzr.1"
 license_name: CC BY 4.0
 license_link: https://creativecommons.org/licenses/by/4.0/
 
+ml_performance_benchmarks:
+  - source_name: "Predictive Maintenance: An Autoencoder Anomaly-Based Approach for a 3 DoF Delta Robot "
+    source_link: "https://doi.org/10.3390/s21216979"
+    algorithm_used: "AE with convolutional layers"
+    benchmark:  0.0281
+    metric: "Minimum validation loss"
+
 papers_doi:
   - "10.3390/s21216979"
+  - "10.1016/j.mechmachtheory.2006.06.012"
 
 papers_with_no_doi:
-  - "Laribi, M. A., L. Romdhane, and S. Zeghloul. 'Analysis and dimensional synthesis of the DELTA robot for a prescribed workspace.' Mechanism and machine theory 42.7 (2007): 859-870."
   - "https://github.com/fathikiavash/Delta_Robot_Predictive_Maintenance"
+#  - "Laribi, M. A., L. Romdhane, and S. Zeghloul. 'Analysis and dimensional synthesis of the DELTA robot for a prescribed workspace.' Mechanism and machine theory 42.7 (2007): 859-870."

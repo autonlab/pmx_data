@@ -1,5 +1,32 @@
+name: Diesel Engine Faults
 description: Diesel engine data from failure scenarios across 4 operating states
+
 equipment_type: Engines
+
+problem_type: "Diagnostics / Fault Classification"
+
 location: https://data.mendeley.com/datasets/k22zxz29kr/1
-name: diesel engine faults
-problem_type: Fault Detection
+
+data_doi: "10.17632/k22zxz29kr.1"
+
+license_name: CC BY 4.0
+license_link: https://creativecommons.org/licenses/by/4.0/
+
+ml_performance_benchmarks:
+  - source_name: "Application of Machine Learning in Diesel Engines Fault Identification"
+    source_link: "https://doi.org/10.1007/978-3-319-99268-6_6"
+    algorithm_used: "Random Forest"
+    benchmark: 99.3
+    metric: "Accuracy"
+  - source_name: "Research on Diesel Engine Fault Diagnosis Method Based on Stacked Sparse Autoencoder and Support Vector Machine "
+    source_link: "https://doi.org/10.3390/electronics11142249"
+    algorithm_used: "Stacked Sparse Autoencoder and Support Vector Machine "
+    benchmark: 100.0
+    metric: "Accuracy"
+
+papers_doi: 
+  - "10.1007/978-3-319-99268-6_6"
+  - "10.3390/electronics11142249"
+
+papers_with_no_doi: 
+  - "NIXON, Steve, et al. A machine learning approach to diesel engine health prognostics using engine controller data. In: 10th Annual Conference of the Prognostics and Health Management Society, PHM 2018. Prognostics and Health Management Society, 2018."
