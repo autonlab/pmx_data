@@ -18,8 +18,6 @@ readme = snakemd.new_doc("README")
 
 readme.add_header("Predictive Maintence Metadata Repository")
 
-readme.add_paragraph("branch name: " + branchname)
-
 readme.add_paragraph("Predictive Maintenance poses a number of challenges for machine learning. The general types of machine learning problems encountered in predictive maintenance are:")
 readme.add_ordered_list([
     "Time to failure prediction", 
