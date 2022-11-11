@@ -1,3 +1,0 @@
-# demo writeup
-
-demo demo
