@@ -1,6 +1,7 @@
 import snakemd
 import yaml
 import os
+import sys
 
 def get(info, key):
     result = ""
@@ -10,16 +11,22 @@ def get(info, key):
         pass
     return result
 
+#github actions will input branch name as command line arg
+branchname = sys.argv[1]
+
 readme = snakemd.new_doc("README")
 
-readme.add_header("Predictive and Prognostics Maintence Data Repository")
+readme.add_header("Predictive Maintence Metadata Repository")
+
+readme.add_paragraph("branch name: " + branchname)
+
 readme.add_paragraph("Predictive Maintenance poses a number of challenges for machine learning. The general types of machine learning problems encountered in predictive maintenance are:")
 readme.add_ordered_list([
     "Time to failure prediction", 
     "Anomaly detection",
     "Clustering",
     "Fault detection and root cause analysis"])
-readme.add_paragraph("The purpose of this repository is to help researchers start working on predictive maintenance quickly. It provides an overview of relevant predictive maintenance data and 'quick start' scripts for researchers. We call it the Predictive and prOgnostics maiNtenance data repositorY or (PONY) for short.")
+readme.add_paragraph("The purpose of this repository is to help researchers start working on predictive maintenance quickly. It provides an overview of relevant predictive maintenance data and 'quick start' scripts for researchers.  This is a *metadata* repository, so it does not contain the data itself--only information about the data, and scripts for downloading and working with it.")
 
 readme.add_header("Table of Contents", level=2)
 readme.add_table_of_contents(range(2,4))
@@ -34,8 +41,7 @@ for dirname in sorted(os.listdir("pmx_data")):
         info = yaml.safe_load(infofile)
 
     name = info["name"]
-    namelink = "[" + name + "](https://github.com/autonlab/pmx_data/tree/main/pmx_data/" + dirname + ")"
-
+    namelink = "[" + name + "](https://github.com/autonlab/pmx_data/tree/" + branchname + "/pmx_data/" + dirname + ")"
     description = get(info, "description")
     
     problems = info["problem_type"]
@@ -53,14 +59,27 @@ readme.add_table(
     infoTable
 )
 
-readme.add_header("Adding a dataset", level=2)
-readme.add_paragraph("The minimum requirements to add a dataset to this repository are:")
+readme.add_header("Downloading a Dataset", level=2)
+readme.add_paragraph("To download a dataset:")
 readme.add_ordered_list([
-    "Create a directory for the data.",
-    "Write an 'info.yaml' file containing basic information about your dataset that will be used to generate a README (see [sample_info.yaml](https://github.com/autonlab/pmx_data/blob/main/sample_scripts/sample_info.yaml) for examples).",
-    "Optional: write a 'custom_writeup.md' markdown file containing any information about your dataset that is not encapsulated by info.yaml.  This will be added to the generated README.",
-    "Write a 'get_data.sh' script to download the data and unpack it into a standard csv format within a subfolder called 'datasets' (see [sample_get_data.sh](https://github.com/autonlab/pmx_data/blob/main/sample_scripts/sample_get_data.sh))",
-    "Write a 'load_data.py' sample script to load the data into a pandas dataframe or any other python object that is easy to work with ([this sample script](https://github.com/autonlab/pmx_data/blob/main/sample_scripts/load_data_recursive.py) works well in most instances)"
+    "Navigate to that dataset's directory in this repository.",
+    "Download the get_data.sh script.",
+    "Run the get_data.sh script in the location where you would like to download the data."
+])
+readme.add_paragraph("This currently only works on Linux.  Some get_data.sh scripts require additional steps before you can run them, which are described in a comment at the top of the file.")
+
+readme.add_header("Adding a Dataset", level=2)
+readme.add_paragraph("Steps to add a dataset to this repository:")
+readme.add_ordered_list([
+    "If the dataset is not already hosted online: upload it to a data hosting site (we recommend [Mendeley](https://data.mendeley.com)).",
+    "Clone this repository to your local machine.",
+    "Make a copy of the [sample_dataset](https://github.com/autonlab/pmx_data/tree/main/sample_scripts/sample_dataset) directory within the pmx_data directory.  This contains sample scripts to get you started.",
+    "Rename the directory to match the name of your dataset.",
+    "Modify the 'get_data.sh' script to download your data and unpack it into a standard csv format within a subfolder called 'datasets'.",
+    "Modify the 'info.yaml' file, filling in information about your dataset that will be used to generate a README.",
+    "Optional: Write a 'custom_writeup.md' markdown file containing any information about your dataset that is not encapsulated by info.yaml.  This will be added to the generated README.",
+    "Optional: Write a 'load_data.py' sample script to load the data into a pandas dataframe or any other python object that is easy to work with ([this sample script](https://github.com/autonlab/pmx_data/blob/main/sample_scripts/load_data_recursive.py) works well in most instances).",
+    "Push your changes to the repository."
 ])
 
 readme.add_header("Additional Resources", level=2)
@@ -73,10 +92,12 @@ readme.add_paragraph("https://www.openml.org/")
 readme.add_header("Wishlist", level=2)
 readme.add_unordered_list([
     "More image datasets, i.e. PmX with microscopy or aerial inspection.",
-    "Tracking performance of different autoML tools on datasets over time",
-    "Support for multiple problem types on same dataset (for instance, fault detection can also be anomaly detection if you remove the target variable)",
-    "Guide to pros and cons of different data hosting services (mendeley, kaggle, etc) for people who want to upload datasets",
-    "Allow for searching for datasets with different attributes or sorting by attribute"
+    "Tracking performance of different autoML tools on datasets over time.",
+    "Support for multiple problem types on same dataset (for instance, fault detection can also be anomaly detection if you remove the target variable).",
+    "Guide to pros and cons of different data hosting services (mendeley, kaggle, etc) for people who want to upload datasets.",
+    "Allow for searching for datasets with different attributes or sorting by attribute.",
+    "Github Pages GUI to make downloading and uploading easier for non-technical users.",
+    "Support for downloading and unpacking data in Windows and MacOS."
 ])
 
 readme.output_page()
