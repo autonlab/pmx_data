@@ -21,6 +21,11 @@ jobs:
           info:
             - added|modified: 'pmx_data/**/info.yaml'
 
+    - name: Extract branch name
+      shell: bash
+      run: echo "##[set-output name=branch;]$(echo ${GITHUB_REF#refs/heads/})"
+      id: extract_branch
+
     - name: Set up Python 3.9
       uses: actions/setup-python@v2
       with:
@@ -30,7 +35,7 @@ jobs:
       run: pip install snakemd pyyaml
         
     - name: Generate README
-      run: python generate_readme.py
+      run: python generate_readme.py ${{ steps.extract_branch.outputs.branch }}
     
     - name: Generate sub-README
       run: python generate_sub_readme.py ${{ steps.filter.outputs.info_files }}
