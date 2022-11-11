@@ -1,3 +1,19 @@
+# Maintenance of naval propulsion plants
+
+Problem type: Time to failure prediction
+
+|  |
+|  |
+|  |
+## Sources
+
+Data location: https://archive.ics.uci.edu/ml/datasets/Condition+Based+Maintenance+of+Naval+Propulsion+Plants
+
+No data citation available
+
+No data license available.
+
+## Additional information
 # DESCRIPTION FOR DATASET ABOUT: "CONDITION BASED MAINTENANCE OF NAVAL PROPULSION PLANTS"
 
 
