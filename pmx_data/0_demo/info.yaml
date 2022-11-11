@@ -1,0 +1,66 @@
+# This is a template info.yaml file that you can use when adding a dataset
+# preserve the form of this file (i.e., names of tags such as "name", "equipment_type", etc)
+# replace the info after the tags with info specific to your dataset
+# If any particular tag does not apply (for ex., you don't have performance benchmarks), just delete the line(s)
+
+name: "demo"
+description: "demo description"
+equipment_type: "[add equipment type here from below list]"
+#choose 1 of: ['Tools & Machinery', 'Engines', 'Aircraft', 'Maritime', "Computer Hardware & IoT", "Land Vehicles", "Electrical", "Gearboxes & Mechanisms", "Sensors", "Batteries", "Robotics"] or update this comment if you would like to add another.
+
+data_type: "[add data type here from below list]"
+#choose 1 of: ["Tabular", "Time Series", "Text", "Image"] or update this comment if you would like to add another.
+problem_type: "[add problem type here from below list]"
+#choose 1 of: ["Fault Detection", "Diagnostics / Fault Classification", "RUL Estimation", "Degradation State Estimation", "Anomaly Detection"] or update this comment if you would like to add another.
+
+note: "demo note"
+
+sizegb: .025
+#size in GB of dataset after get_data.sh is run
+
+location: "https://link/to/data/location"
+
+#Bibtex citation will be automatically generated from the doi
+data_doi: "1234/sampledoi/5678"
+#or, if you don't have a doi:
+data_citation: "Write a citation (bibtex format preferred)"
+
+#if the data has a license (example: GPL 2.0):
+license_name: "GPL 2.0"
+license_link: "https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html"
+
+ml_performance_benchmarks:
+  - source_name: "Name of AutoML tool or paper"
+    source_link: "Link to AutoML tool or paper, if applicable"
+    algorithm_used: "Name of algorithm"
+    benchmark: 42
+    metric: "metric used to measure benchmark performance"
+  - source_name: "AutonML"
+    source_link: "autonml.readthedocs.io"
+    algorithm_used: "random forest"
+    benchmark: .85
+    metric: "AUC"
+
+#list of papers that provide benchmarks or otherwise work with this dataset
+papers_doi: 
+  - "10.1016/j.oceaneng.2021.109651"
+  - "10.1016/j.oceaneng.2021.108874"
+  - "10.1016/j.dib.2021.107477"
+#only use text citation for papers where you dont have a doi
+papers_with_no_doi: 
+  - "text citation or link here"
+  - "another text citation or link here"
+
+#the following does not apply to all datasets
+features: 17
+rows: 1225
+target_colname: "[name of target column if applicable]"
+missing_data: True
+
+#The following only applies to datasets with multiple time series
+time_series_all_same_length: True
+#if True:
+time_series_length: 200
+#if False: 
+average_time_series_length: 200
+
