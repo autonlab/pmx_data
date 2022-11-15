@@ -30,7 +30,7 @@ Parameters for charge cycles are as follow:
 - time
 
 
-Parameters for charge cycles are as follow:
+Parameters for discharge cycles are as follow:
 - voltage
 - current
 - temperature
