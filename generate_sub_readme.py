@@ -141,6 +141,14 @@ def generate_sub_readme(datasetpath):
         
         sourcesdoc.add_unordered_list(papers)
 
+    if 'benchmark_code_links' in info.keys():
+        codes = []
+        sourcesdoc.add_paragraph("Links to code analyzing the dataset or providing benchmark performance:")
+        for link in info['benchmark_code_links']:
+            codes = codes + [link]
+
+        sourcesdoc.add_unordered_list(codes)
+    
     custom_writeup_path = os.path.join(datasetpath, "custom_writeup.md")
     if os.path.exists(custom_writeup_path):
         sourcesdoc.add_header("Additional information", level=2)

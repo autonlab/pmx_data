@@ -1,10 +1,11 @@
-name: cnc mill tool wear
+name: CNC Mill Tool Wear
 description: Time series machining data across 18 CNC milling experiments
 equipment_type: Tools & Machinery
 
 data_type: "Time Series"
 problem_type: Fault Detection
-location: https://www.kaggle.com/datasets/shasun/tool-wear-detection-in-cnc-mill
+
+note: "Data is hosted on kaggle, and requires setup before downloading - see comments in get_data.sh"
 
 sizegb: .011
 
@@ -17,10 +18,15 @@ papers_doi:
   - "10.1016/j.ymssp.2005.10.010"
   - "10.3390/s21248431"
 
+benchmark_code_links:
+  - "https://www.kaggle.com/code/koheimuramatsu/cnc-milling-machine-tool-wear-detection/notebook"
+  - "https://github.com/SaeedShurrab/Tool-Wear-Detection-in-CNC-Milling-Operartions"
+  - "https://github.com/flyinginte/toolwear_cncmilling"
+
 features: 47
 rows: 18
-target_colname: "tool_condition, machining_finalized, passed_visual_inspection"
-missing_data: False
+target_colname: "tool_condition, machining_finalized, passed_visual_inspection, clamp_pressure"
+missing_data: True
 
 time_series_all_same_length: False
 average_time_series_length: 1500

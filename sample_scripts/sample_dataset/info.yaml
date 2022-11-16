@@ -51,6 +51,12 @@ papers_with_no_doi:
   - "text citation or link here"
   - "another text citation or link here"
 
+#links to code analyzing the dataset or providing benchmark performance
+benchmark_code_links:
+  - "https://www.kaggle.com/code/koheimuramatsu/cnc-milling-machine-tool-wear-detection/notebook"
+  - "https://github.com/SaeedShurrab/Tool-Wear-Detection-in-CNC-Milling-Operartions"
+  - "https://github.com/flyinginte/toolwear_cncmilling"
+
 #the following does not apply to all datasets
 features: 17
 rows: 1225

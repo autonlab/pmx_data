@@ -1,14 +1,16 @@
-The database consists of a series of files, wherein, each of these files contains sensor data taken in the course of conducting a single experiment.
-A series of these machining experiments were conducted using wax blocks(2" x 2" x 1.5") with a CNC milling machine located in the System-level Manufacturing and Automation Research Testbed (SMART) at the University of Michigan.
-Data from the machine was collected taking into account the changes taking place regarding tool condition, feed speed and clamping pressure.
+The dataset consists of a series of files, wherein, each of these files contains sensor data taken in the course of conducting a single experiment.
+A series of these machining experiments were conducted using wax blocks (2" x 2" x 1.5") with a CNC milling machine located in the System-level Manufacturing and Automation Research Testbed (SMART) at the University of Michigan.
+
+Data from the machine was collected, taking into account the changes taking place regarding tool condition, feed speed and clamping pressure.
 Each experiment ended with the creation of a finished wax part, the top surface of which had the letter "S" engraved on it.
 
-You can use this dataset for the experiment in the fields such as:
-- Tool wear detection: you can use here supervised binary classification in order to perform the identification process of worn and unworn cutting tools.  Out of 18 experiments, 8 were conducted with an unworn tool, whereas 10 were run with a worn tool.
-- Detection of inadequate clamping: in this case, the data would be used in order to detect the condition when a workpiece is not being held in the vise with sufficient pressure to pass visual inspection. The experiments were run with the pressures values of 2.5, 3 and 4 bar. Moreover this data could also be used for a detection of the conditions at which a critical point occurs which further prevents the machining operation from completing.
+This dataset contains multiple targets and thus can be used for multiple problems:
+- Tool wear detection: you can use supervised binary classification in order to identify whether a cutting tool is worn.  Out of 18 experiments, 8 were conducted with an unworn tool, whereas 10 were run with a worn tool.
+- Detection of inadequate clamping: in this case, the data would be used in order to detect when a workpiece is not being held in the vise with sufficient pressure to pass visual inspection. The experiments were run with the pressures values of 2.5, 3 and 4 bar. 
+- Failure prediction: this data could be used to train a model to detect conditions that could prevent a machining operation from completing.
 
+In the dataset we can distinguish 18 files with the experiments data recordings and one train file where you can find a general data from each of the experiments. A sampling rate of the collected data was 100ms.
 
-In the dataset we can distinguish 18 files with the experiments data recordings and one train file where you can find a general data from each of the 1 different experiments. A sampling rate of the collected data was 100ms.
 In this train file there are 7 different columns:
 
 The inputs (features):
@@ -86,9 +88,4 @@ For the Machine:
 * M1_sequence_number: line of G-code being executed
 * M1_CURRENT_FEEDRATE: instantaneous feed rate of spindle
 
-The last column in the experiment files is titles as Machining_Process - this column provides an information about the current machining stage being performed. There is included the information about the preparation, tracing up and down the Spindle (S) curve and involves different lanes and also repositions  of the spindle as it moves through the air to a certain starting point.
-
-Additional resources:
-"https://www.kaggle.com/code/koheimuramatsu/cnc-milling-machine-tool-wear-detection/notebook"
-"https://github.com/SaeedShurrab/Tool-Wear-Detection-in-CNC-Milling-Operartions"
-"https://github.com/flyinginte/toolwear_cncmilling"
+The last column in the experiment files is Machining_Process - this column provides information about the current machining stage being performed. There is included the information about the preparation, tracing up and down the Spindle (S) curve and involves different lanes and also repositions  of the spindle as it moves through the air to a certain starting point.
