@@ -3,7 +3,7 @@ run-name: Generate README
 on:
   push:
     paths:
-      - 'pmx_data/*/info.ya?ml'
+      - 'pmx_data/*/info.yaml'
       - 'pmx_data/*/custom_writeup.md'
 jobs:
   build:
@@ -20,6 +20,7 @@ jobs:
         filters: |
           info:
             - added|modified: 'pmx_data/**/info.yaml'
+            - added|modified: 'pmx_data/**/custom_writeup.md'
 
     - name: Extract branch name
       shell: bash

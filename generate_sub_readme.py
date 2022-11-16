@@ -40,7 +40,12 @@ def get(info, key):
         pass
     return result
 
-def generate_sub_readme(info, dataset_path):
+def generate_sub_readme(datasetpath):
+
+    infopath = os.path.join(datasetpath, "info.yaml")
+    with open(infopath, "r") as infofile:
+        info = yaml.safe_load(infofile)
+
     headerdoc = snakemd.new_doc("README")
     if 'name' in info.keys():
         headerdoc.add_header(info['name'])
@@ -135,7 +140,7 @@ def generate_sub_readme(info, dataset_path):
         
         sourcesdoc.add_unordered_list(papers)
 
-    custom_writeup_path = os.path.join(dataset_path, "custom_writeup.md")
+    custom_writeup_path = os.path.join(datasetpath, "custom_writeup.md")
     if os.path.exists(custom_writeup_path):
         sourcesdoc.add_header("Additional information", level=2)
         with open(custom_writeup_path, 'r') as custom_writeup:
@@ -147,17 +152,19 @@ def generate_sub_readme(info, dataset_path):
     else:
         output_file = "\n".join([headerdoc.render(), sourcesdoc.render()])
 
-    readme_path = os.path.join(dataset_path, "README.md")
+    readme_path = os.path.join(datasetpath, "README.md")
     with open(readme_path, 'w') as readme_file:
         readme_file.write(output_file)
 
-#sys.argv[1:] should be a list of paths of changed info.yaml files
-#go thru each argument and regenerate the sub-readme for that file
+#sys.argv[1:] should be a list of paths of changed info.yaml files or custom_writeup.md files
+#go thru each argument and extract the path to the dataset folder
+#os.path.split(filepath)[0] returns the path for the folder containing the file at filepath
 
-for infopath in sys.argv[1:]:
-    datasetpath = os.path.split(infopath)[0]
+datasetpaths = [os.path.split(filepath)[0] for filepath in sys.argv[1:]]
 
-    with open(infopath, "r") as infofile:
-        info = yaml.safe_load(infofile)
+#if both info.yaml and custom_writeup.md were modified for the same dataset, there will be duplicates
+#remove these so we dont generate the same README twice
+datasetpaths = list(set(datasetpaths))
 
-    generate_sub_readme(info, datasetpath)
+for datasetpath in datasetpaths:
+    generate_sub_readme(datasetpath)
