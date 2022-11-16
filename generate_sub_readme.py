@@ -60,10 +60,11 @@ def generate_sub_readme(datasetpath):
         ("rows", "Rows"),
         ("missing_data", "Contains missing data?"),
         ("target", "Target Column"),
-        ("notes", "Notes"),
+        ("num_classes", "Number of classes"),
         ("time_series_all_same_length", "Are all time series the same length?"),
         ("average_time_series_length", "Avg. time series length"),
-        ("time_series_length", "Time series length")
+        ("time_series_length", "Time series length"),
+        ("notes", "Notes")
     ])
 
     tablecols = [x for x in possibletablecols.keys() if (x in info.keys())]

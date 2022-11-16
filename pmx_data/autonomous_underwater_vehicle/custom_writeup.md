@@ -1,14 +1,15 @@
-The dataset consists of 1225 data samples for 5 fault types (labels).
 The dataset comes from the Haizhe which is a small autonomous underwater quadrotor vehicle. This machine consists of 4 brushless motors, 4 propellers, 4 electronic speed control, 1 depth sensor, 1 nine-axis inertial measurement unit and 1 microcontroller unit.
 
-The dataset is divided into 2 folders, test data and train data. Each of these subfolders contains 5 subfolders with .csv files corresponding to the 5 fault types:
+The dataset is divided into 2 folders, test and train. Each of these folders contains 5 subfolders corresponding to the 5 fault types:
 - Normal - no fault
 - AddWeight - load increase
 - PressureGain constant - failure of the depth sensor
 - PropellerDamage slight - slight damage to the propeller
 - PropellerDamage bad - severe damage to the propeller
 
-Each of the fault type subfolders described above, contains state data recordings of the machine over a certain period of time. The name of fault type subfolder represents the true label of the sample.
+Each of the fault type subfolders described above contains state data recordings of the machine over a certain period of time. The name of the subfolder represents the true label of the sample.
+
+There are also summary csv's, called test.csv and train.csv, that map each time series csv file to a target label.
 
 Each csv has 17 different columns:
 1. time: The absolute time for ‘Haizhe’ to record data.
@@ -28,5 +29,3 @@ Each csv has 17 different columns:
 15. w_row: The angular velocity (in degrees/s) of rotation around the x-axis in the body coordinate frame, measured by nine-axis IMU.
 16. w_pitch: The angular velocity (in degrees/s) of rotation around the y-axis in the body coordinate frame, measured by nine-axis IMU.
 17. w_yaw: The angular velocity (in degrees/s) of rotation around the z-axis in the body coordinate frame, measured by nine-axis IMU.
-
-Dataset can be used to validate a model-free fault diagnosis method (the method is proposed in the paper titled Model-free fault diagnosis for autonomous underwater vehicles using sequence convolutional neural network. The citation is contained in the sources file in Documentation folder).

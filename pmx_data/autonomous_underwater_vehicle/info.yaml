@@ -1,11 +1,11 @@
-name: autonomous underwater vehicle
+name: Autonomous Underwater Vehicle
 description: Time series measurements from an underwater vehicle with 5 fault types
 equipment_type: Maritime
 
 data_type: Time Series
-problem_type: Fault Classification
+problem_type: Diagnostics / Fault Classification
 
-note: rar data compression
+note: "rar data compression - requires additional setup to download (see comments in get_data.sh)"
 
 sizegb: 0.025
 
@@ -29,8 +29,9 @@ papers_doi:
 
 features: 17
 rows: 1225
-missing_data: unknown
+missing_data: False
 target_colname: class
+num_classes: 5
 
 time_series_all_same_length: false
 average_time_series_length: 200

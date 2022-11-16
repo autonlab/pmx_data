@@ -57,6 +57,9 @@ rows: 1225
 target: "[name of target column if applicable]"
 missing_data: True
 
+#The following only applies to multiclass classification datasets
+num_classes: 4
+
 #The following only applies to datasets with multiple time series
 time_series_all_same_length: True
 #if True:
