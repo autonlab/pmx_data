@@ -3,3 +3,4 @@ equipment_type: Tools & Machinery
 location: https://www.kaggle.com/datasets/inIT-OWL/production-plant-data-for-condition-monitoring
 name: production plant data for condition monitoring
 problem_type: Time to failure prediction
+note: "Data is hosted on kaggle, and requires setup before downloading (see comments in get_data.sh)"

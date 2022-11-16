@@ -5,7 +5,7 @@ equipment_type: Tools & Machinery
 data_type: "Time Series"
 problem_type: Fault Detection
 
-note: "Data is hosted on kaggle, and requires setup before downloading - see comments in get_data.sh"
+note: "Data is hosted on kaggle, and requires setup before downloading (see comments in get_data.sh)"
 
 sizegb: .011
 

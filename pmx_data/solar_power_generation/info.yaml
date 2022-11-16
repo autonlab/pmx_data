@@ -3,3 +3,4 @@ equipment_type: Electrical
 location: https://www.kaggle.com/datasets/anikannal/solar-power-generation-data
 name: solar power generation
 problem_type: Fault detection
+note: "Data is hosted on kaggle, and requires setup before downloading (see comments in get_data.sh)"

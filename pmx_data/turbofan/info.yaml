@@ -3,3 +3,4 @@ equipment_type: Aircraft
 location: https://www.kaggle.com/datasets/behrad3d/nasa-cmaps
 name: turbofan
 problem_type: Time to event prediction
+note: "Data is hosted on kaggle, and requires setup before downloading (see comments in get_data.sh)"

@@ -3,3 +3,5 @@ equipment_type: Electrical
 location: https://www.kaggle.com/datasets/esathyaprakash/electrical-fault-detection-and-classification
 name: electrical fault detection
 problem_type: Fault Detection and Classification
+
+note: "Data is hosted on kaggle, and requires setup before downloading (see comments in get_data.sh)"

@@ -4,3 +4,5 @@ equipment_type: Gearboxes & Mechanisms
 location: https://www.kaggle.com/datasets/brjapon/gearbox-fault-diagnosis
 name: gearbox fault diagnosis
 problem_type: Fault detection
+
+note: "Data is hosted on kaggle, and requires setup before downloading (see comments in get_data.sh)"
