@@ -1,24 +1,32 @@
+name: Air pressure system failures in Scania trucks.
+description: Classifying whether truck failure is a result of its air pressure system
+equipment_type: Land Vehicles
+
+data_type: Tabular
+problem_type: "Diagnostics / Fault Classification"
+
+sizegb: 0.054
+
+location: https://archive.ics.uci.edu/ml/datasets/APS+Failure+at+Scania+Trucks
+
 data_citation: 'Dua, D. and Graff, C. (2019). UCI Machine Learning Repository [http://archive.ics.uci.edu/ml].
   Irvine, CA: University of California, School of Information and Computer Science.'
-data_type: Tabular
-description: Classifying whether truck failure is a result of its air pressure system
-equipment_type: land_vehicles
-features: 171
-license_link: https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html
+
 license_name: GPL 2.0
-location: https://archive.ics.uci.edu/ml/datasets/APS+Failure+at+Scania+Trucks
-missing_data: true
+license_link: https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html
+
 ml_performance_benchmarks:
 - algorithm_used: Random Forest
   benchmark: 0.989
   metric: ROC AUC
   source_link: autonml.readthedocs.io
   source_name: AutonML
-name: Air pressure system failures in Scania trucks.
+
 papers_doi:
-  10.1007/978-3-319-46349-0_36: null
-  10.1109/ICAIS53314.2022.9742716: null
-problem_type: Failure Classification
+  - 10.1007/978-3-319-46349-0_36
+  - 10.1109/ICAIS53314.2022.9742716
+
+features: 171
 rows: 76000
-sizegb: 0.054
 target: class
+missing_data: true

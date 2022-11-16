@@ -54,7 +54,7 @@ papers_with_no_doi:
 #the following does not apply to all datasets
 features: 17
 rows: 1225
-target_colname: "[name of target column if applicable]"
+target: "[name of target column if applicable]"
 missing_data: True
 
 #The following only applies to datasets with multiple time series
