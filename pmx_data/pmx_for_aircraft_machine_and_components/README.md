@@ -1,3 +1,19 @@
+# pmx for aircraft machine and components
+
+Problem type: Time to failure prediction
+
+|  |
+|  |
+|  |
+## Sources
+
+Data location: https://www.kaggle.com/datasets/arnabbiswas1/microsoft-azure-predictive-maintenance
+
+No data citation available
+
+No data license available.
+
+## Additional information
 # PREDICTIVE MAINTENANCE FOR AIRCRAFT MACHINE AND COMPONENTS - DATASET DESCRIPTION:
 
 The aim of this project is to predict failures due to some certain components of a machine in a period of time of 24 hours.

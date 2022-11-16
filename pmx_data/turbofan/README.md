@@ -1,3 +1,19 @@
+# turbofan
+
+Problem type: Time to event prediction
+
+|  |
+|  |
+|  |
+## Sources
+
+Data location: https://www.kaggle.com/datasets/behrad3d/nasa-cmaps
+
+No data citation available
+
+No data license available.
+
+## Additional information
 The project is about turbofan engine degradation process. There is collected dataset from engine degradation simulation experiments conducted at NASA using C-MAPSS. 
 
 We can distuinguish 4 different sets further divided into training and test subsets. Each time series from the sets is from a different engine. Each of the engines starts working in normal conditions (no fault condition noticed). 

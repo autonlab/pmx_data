@@ -1,3 +1,19 @@
+# pump sensor
+
+Problem type: Anomaly detection
+
+|  |
+|  |
+|  |
+## Sources
+
+Data location: https://www.kaggle.com/datasets/nphantawee/pump-sensor-data
+
+No data citation available
+
+No data license available.
+
+## Additional information
 The dataset consists of sensor readings gathered from the water pump used in the Manufacturing industry.
 The aim of this dataset is to give the possibility to detect any possible anomalies in the pump behaviour in order to make it possible to stop the pump before it breaks down.  This has the aim of preventing unplanned downtime and unnecessary maintenance of this machines and that further enables to receive more effective way of managing critical components 
 

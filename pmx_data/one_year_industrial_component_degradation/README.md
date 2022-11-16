@@ -1,3 +1,19 @@
+# one year industrial component degradation
+
+Problem type: Time to failure prediction
+
+|  |
+|  |
+|  |
+## Sources
+
+Data location: https://www.kaggle.com/datasets/inIT-OWL/one-year-industrial-component-degradation
+
+No data citation available
+
+No data license available.
+
+## Additional information
 # ONE YEAR INDUSTRIAL COMPONENT DEGRADATION DATASET DESCRIPTION
 
 

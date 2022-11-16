@@ -1,3 +1,19 @@
+# solar power generation
+
+Problem type: Fault detection
+
+|  |
+|  |
+|  |
+## Sources
+
+Data location: https://www.kaggle.com/datasets/anikannal/solar-power-generation-data
+
+No data citation available
+
+No data license available.
+
+## Additional information
 # SOLAR POWER GENERATION - DATASET DESCRIPTION:
 
 The Datasets folder consist of 4 data files - the data in this files has been collected from 2 solar power plants in a period of 34 days.

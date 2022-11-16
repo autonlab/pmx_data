@@ -1,3 +1,19 @@
+# gearbox fault diagnosis
+
+Problem type: Fault detection
+
+|  |
+|  |
+|  |
+## Sources
+
+Data location: https://www.kaggle.com/datasets/brjapon/gearbox-fault-diagnosis
+
+No data citation available
+
+No data license available.
+
+## Additional information
 The dataset consists of vibration sensors recorded by using SpectraQuest's Gearbox Fault Diagnostics Simulator. In order to collect enough records, 4 vibration sensors, placed in four different direction were used. There was also added the variation of load which varied from 0 to 90 percent.
 
 The dataset also consist of 2 sub data files: 1) Healthy - 10 files 2) Broken Tooth - 10 files

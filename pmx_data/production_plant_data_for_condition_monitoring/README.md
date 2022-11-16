@@ -1,3 +1,19 @@
+# production plant data for condition monitoring
+
+Problem type: Time to failure prediction
+
+|  |
+|  |
+|  |
+## Sources
+
+Data location: https://www.kaggle.com/datasets/inIT-OWL/production-plant-data-for-condition-monitoring
+
+No data citation available
+
+No data license available.
+
+## Additional information
 # Production Plant Data for Condition Monitoring - DATASET DESCRIPTION
 
 The dataset has been created in order to give the possibility to predict the condition of an important component within the production lines. This condition is essential for the function of the plant and the resulting product quality.

@@ -1,3 +1,19 @@
+# pmx for ga
+
+Problem type: Time to failure prediction
+
+|  |
+|  |
+|  |
+## Sources
+
+Data location: https://www.kaggle.com/datasets/hooong/ngafid-mc-20210917
+
+No data citation available
+
+No data license available.
+
+## Additional information
 # PREDICTIVE MAINTENANCE FOR GENERAL AVIATION - DATASET DESCRIPTION:
 
 The dataset comes from the NGAFID Maintenance Classification (NGAFID-MC). This is a novel benchmark in terms of difficulty, number of samples and sequence length. This Repository which is available in Documentation folder consist of over 7500 labeled flights, representing over 11500 hours of per second flight data recorder readings of 23 sensor parameters from Cessna 172S.

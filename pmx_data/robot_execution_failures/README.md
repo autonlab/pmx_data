@@ -1,3 +1,19 @@
+# robot execution failures
+
+Problem type: Time to failure prediction
+
+|  |
+|  |
+|  |
+## Sources
+
+Data location: https://www.kaggle.com/datasets/prashant111/robot-execution-failures
+
+No data citation available
+
+No data license available.
+
+## Additional information
 # ROBOT EXECUTION FAILURES - DATASET DESCRIPTION:
 
 These datasets were collected, defined and evaluated in order to improve the classification accuracy.

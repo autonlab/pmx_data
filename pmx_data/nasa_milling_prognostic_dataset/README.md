@@ -1,3 +1,19 @@
+# nasa milling prognostic dataset
+
+Problem type: Fault Detection
+
+|  |
+|  |
+|  |
+## Sources
+
+Data location: https://www.kaggle.com/datasets/vinayak123tyagi/milling-data-set-prognostic-data
+
+No data citation available
+
+No data license available.
+
+## Additional information
 # NASA MILLING PROGNOSTIC DATASET FOR PMx - DATASET DESCRIPTION
 
 The data contained in the dataset subfolder is originally owned by NASA in .mat format. But in this repository the dataset has been downloaded from kaggle website (link in the SOURCE file) in .csv format (converted from .mat).

@@ -1,3 +1,19 @@
+# electrical fault detection
+
+Problem type: Fault Detection and Classification
+
+|  |
+|  |
+|  |
+## Sources
+
+Data location: https://www.kaggle.com/datasets/esathyaprakash/electrical-fault-detection-and-classification
+
+No data citation available
+
+No data license available.
+
+## Additional information
 
 
 This dataset is a collection of line currents and voltages for different fault conditions.
