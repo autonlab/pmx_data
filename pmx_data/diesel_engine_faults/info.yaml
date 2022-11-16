@@ -1,9 +1,13 @@
 name: Diesel Engine Faults
-description: Diesel engine data from failure scenarios across 4 operating states
+description: Diesel engine data from failure scenarios across 4 operating states.
 
 equipment_type: Engines
 
 problem_type: "Diagnostics / Fault Classification"
+
+note: "data is in .mat format."
+
+sizegb: 0.0061
 
 location: https://data.mendeley.com/datasets/k22zxz29kr/1
 
