@@ -58,7 +58,6 @@ readme.add_table(
 )
 
 readme.add_header("Downloading a Dataset", level=2)
-readme.add_paragraph("To download a dataset:")
 readme.add_ordered_list([
     "Navigate to that dataset's directory in this repository.",
     "Download the get_data.sh script.",
@@ -67,17 +66,18 @@ readme.add_ordered_list([
 readme.add_paragraph("This currently only works on Linux.  Some get_data.sh scripts require additional steps before you can run them, which are described in a comment at the top of the file.")
 
 readme.add_header("Adding a Dataset", level=2)
-readme.add_paragraph("Steps to add a dataset to this repository:")
 readme.add_ordered_list([
     "If the dataset is not already hosted online: upload it to a data hosting site (we recommend [Mendeley](https://data.mendeley.com)).",
-    "Clone this repository to your local machine.",
-    "Make a copy of the [sample_dataset](https://github.com/autonlab/pmx_data/tree/main/sample_scripts/sample_dataset) directory within the pmx_data directory.  This contains sample scripts to get you started.",
+    "Create a fork of this repository."
+    "Clone that fork to your local machine.",
+    "Make a copy of the [sample_dataset](https://github.com/autonlab/pmx_data/tree/main/sample_scripts/sample_dataset) folder and place it within the pmx_data directory.  This folder contains sample scripts to get you started.",
     "Rename the directory to match the name of your dataset.",
     "Modify the 'get_data.sh' script to download your data and unpack it into a standard csv format within a subfolder called 'datasets'.",
     "Modify the 'info.yaml' file, filling in information about your dataset that will be used to generate a README.",
     "Optional: Write a 'custom_writeup.md' markdown file containing any information about your dataset that is not encapsulated by info.yaml.  This will be added to the generated README.",
     "Optional: Write a 'load_data.py' sample script to load the data into a pandas dataframe or any other python object that is easy to work with ([this sample script](https://github.com/autonlab/pmx_data/blob/main/sample_scripts/load_data_recursive.py) works well in most instances).",
-    "Push your changes to the repository."
+    "Commit your local changes and push them to your fork on GitHub."
+    "Create a pull request from your fork into this repository."
 ])
 
 readme.add_header("Additional Resources", level=2)

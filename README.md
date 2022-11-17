@@ -55,8 +55,6 @@ The purpose of this repository is to help researchers start working on predictiv
 
 ## Downloading a Dataset
 
-To download a dataset:
-
 1. Navigate to that dataset's directory in this repository.
 2. Download the get_data.sh script.
 3. Run the get_data.sh script in the location where you would like to download the data.
@@ -65,17 +63,15 @@ This currently only works on Linux. Some get_data.sh scripts require additional 
 
 ## Adding a Dataset
 
-Steps to add a dataset to this repository:
-
 1. If the dataset is not already hosted online: upload it to a data hosting site (we recommend [Mendeley](https://data.mendeley.com)).
-2. Clone this repository to your local machine.
-3. Make a copy of the [sample_dataset](https://github.com/autonlab/pmx_data/tree/main/sample_scripts/sample_dataset) directory within the pmx_data directory. This contains sample scripts to get you started.
+2. Create a fork of this repository.Clone that fork to your local machine.
+3. Make a copy of the [sample_dataset](https://github.com/autonlab/pmx_data/tree/main/sample_scripts/sample_dataset) folder and place it within the pmx_data directory. This folder contains sample scripts to get you started.
 4. Rename the directory to match the name of your dataset.
 5. Modify the 'get_data.sh' script to download your data and unpack it into a standard csv format within a subfolder called 'datasets'.
 6. Modify the 'info.yaml' file, filling in information about your dataset that will be used to generate a README.
 7. Optional: Write a 'custom_writeup.md' markdown file containing any information about your dataset that is not encapsulated by info.yaml. This will be added to the generated README.
 8. Optional: Write a 'load_data.py' sample script to load the data into a pandas dataframe or any other python object that is easy to work with ([this sample script](https://github.com/autonlab/pmx_data/blob/main/sample_scripts/load_data_recursive.py) works well in most instances).
-9. Push your changes to the repository.
+9. Commit your local changes and push them to your fork on GitHub.Create a pull request from your fork into this repository.
 
 ## Additional Resources
 
@@ -98,3 +94,7 @@ https://www.openml.org/
 - Allow for searching for datasets with different attributes or sorting by attribute.
 - Github Pages GUI to make downloading and uploading easier for non-technical users.
 - Support for downloading and unpacking data in Windows and MacOS.
+- Add domain table for data type, problem type, equipment type
+- Standardize train/test splits for future benchmarking when possible
+- More readable display of bibtex citations
+- Fully fill out info.yaml for all datasets
