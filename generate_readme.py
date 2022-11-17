@@ -95,7 +95,11 @@ readme.add_unordered_list([
     "Guide to pros and cons of different data hosting services (mendeley, kaggle, etc) for people who want to upload datasets.",
     "Allow for searching for datasets with different attributes or sorting by attribute.",
     "Github Pages GUI to make downloading and uploading easier for non-technical users.",
-    "Support for downloading and unpacking data in Windows and MacOS."
+    "Support for downloading and unpacking data in Windows and MacOS.",
+    "Add domain table for data type, problem type, equipment type",
+    "Standardize train/test splits for future benchmarking when possible",
+    "More readable display of bibtex citations",
+    "Fully fill out info.yaml for all datasets"
 ])
 
 readme.output_page()

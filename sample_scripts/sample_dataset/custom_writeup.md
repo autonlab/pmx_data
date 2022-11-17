@@ -1,0 +1,1 @@
+This is a custom markdown file where you can add freeform information about your dataset that will appear at the end of the readme under "additional information."  Anything you want the user to know that is not covered by the fields of the info.yaml file can go here.

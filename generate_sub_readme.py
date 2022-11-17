@@ -54,6 +54,9 @@ def generate_sub_readme(datasetpath):
 
     headerdoc.add_paragraph("Problem type: " + get(info, "data_type") + " " + get(info, "problem_type"))
 
+    if "note" in info.keys():
+        headerdoc.add_paragraph("Note: " + info['note'])
+
     possibletablecols = OrderedDict([
         ("sizegb", "Size (GB)"),
         ("features", "Features"),
@@ -64,7 +67,6 @@ def generate_sub_readme(datasetpath):
         ("time_series_all_same_length", "Are all time series the same length?"),
         ("average_time_series_length", "Avg. time series length"),
         ("time_series_length", "Time series length"),
-        ("notes", "Notes")
     ])
 
     tablecols = [x for x in possibletablecols.keys() if (x in info.keys())]

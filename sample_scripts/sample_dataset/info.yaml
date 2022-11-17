@@ -6,12 +6,12 @@
 name: "[Name of Dataset]"
 description: "[1-sentence description of dataset]"
 equipment_type: "[add equipment type here from below list]"
-#choose 1 of: ['Tools & Machinery', 'Engines', 'Aircraft', 'Maritime', "Computer Hardware & IoT", "Land Vehicles", "Electrical", "Gearboxes & Mechanisms", "Sensors", "Batteries", "Robotics"] or update this comment if you would like to add another.
+#choose 1 of: ['Tools & Machinery', 'Engines', 'Aircraft', 'Maritime', "Computer Hardware & IoT", "Land Vehicles", "Electrical", "Gearboxes & Mechanisms", "Sensors", "Batteries", "Robotics"]
 
 data_type: "[add data type here from below list]"
-#choose 1 of: ["Tabular", "Time Series", "Text", "Image"] or update this comment if you would like to add another.
+#choose 1 of: ["Tabular", "Time Series", "Text", "Image", "Other Data Type"]
 problem_type: "[add problem type here from below list]"
-#choose 1 of: ["Fault Detection", "Diagnostics / Fault Classification", "RUL Estimation", "Degradation State Estimation", "Anomaly Detection"] or update this comment if you would like to add another.
+#choose 1 of: ["Fault Detection", "Diagnostics / Fault Classification", "RUL Estimation", "Degradation State Estimation", "Anomaly Detection", "Other Problem Type"]
 
 note: "anything unusual about the format of the data that a user might want to know before they download it"
 
