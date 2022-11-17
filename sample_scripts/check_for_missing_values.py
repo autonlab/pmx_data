@@ -1,5 +1,8 @@
 import os
 import pandas as pd
+#run this once you've downloaded your dataset to check if any of the csv's have missing values
+#it will look through all the subfolders recursively and print a message if they have missing values in any of their files
+#if there are no missing values, it will not print anything.
 
 def make_data_dict(path):
 	missingvalues = False

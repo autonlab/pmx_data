@@ -1,24 +1,19 @@
 #!/bin/bash
-#this dataset is EXTREMELY large - 13gb total while compressed.  
-#I only tested this script downloading parts of it, but it can be modified to download the whole thing.
+#some datasets I found download as csv's with no column names
+#this is a sample script to add a line at the top of each csv containing a header with the column names
+#replace "colname1,coname2,colname3,colname4" with a string containing your dataset's column names, in order, separated by commas
 
-mkdir datasets
-cd datasets
-
-#SUBSETS_TO_DOWNLOAD="normal horizontal-misalignment vertical-misalignment imbalance underhang overhang"
-SUBSETS_TO_DOWNLOAD="normal"
-for SUBSET in $(echo $SUBSETS_TO_DOWNLOAD)
-do
-	wget http://www02.smt.ufrj.br/~offshore/mfs/database/mafaulda/${SUBSET}.tgz
-	tar -xzvf ${SUBSET}.tgz
-	rm ${SUBSET}.tgz
-done
+wget https://hostingsite.com/url/data.zip
+unzip -d datasets data.zip
+rm data.zip
 
 #add column names to each csv
+cd datasets
+
 for FILE in $(find . -name '*.csv')
 do
 	mv $FILE ${FILE}.tmp
-	echo "tachometer,axial underhang,radial underhang,tangential underhang,axial overhang,radial overhang,tangential overhang,microhpone" | cat - ${FILE}.tmp > $FILE
+	echo "colname1,coname2,colname3,colname4" | cat - ${FILE}.tmp > $FILE
 	rm ${FILE}.tmp
 done
 
