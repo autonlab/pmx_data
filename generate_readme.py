@@ -63,16 +63,18 @@ for dirname in sorted(os.listdir("pmx_data")):
     equipment = get(info, "equipment_type")
 
     sizegb = get(info, "sizegb")
-    features = get(info, "features")
-    rows = get(info, "rows")
+    if "features" in info.keys() and "rows" in info.keys():
+        featuresrows = str(get(info, "features")) + ", " + str(get(info, "rows"))
+    else:
+        featuresrows = ""
 
     note = get(info, "note")
 
-    infoTable = infoTable + [[namelink, description, problems, equipment, sizegb, features, rows, note]]
+    infoTable = infoTable + [[namelink, description, problems, equipment, sizegb, featuresrows, note]]
 
 readme.add_table(
     ["**Dataset**", "**Description**", "**Problems**", "**Equipment Type**", 
-    "**Size (GB)**", "**Features**", "**Rows**", "**Note**"],
+    "**Size (GB)**", "**Features, Rows**", "**Note**"],
     infoTable
 )
 
