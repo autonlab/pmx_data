@@ -26,8 +26,22 @@ readme.add_ordered_list([
     "Fault detection and root cause analysis"])
 readme.add_paragraph("The purpose of this repository is to help researchers start working on predictive maintenance quickly. It provides an overview of relevant predictive maintenance data and 'quick start' scripts for researchers.  This is a *metadata* repository, so it does not contain the data itself--only information about the data, and scripts for downloading and working with it.")
 
-readme.add_header("Table of Contents", level=2)
-readme.add_table_of_contents(range(2,4))
+readme.add_header("Table of Contents", level=3)
+readme.add_table_of_contents(range(2,3))
+
+readme.add_header("Video Walkthrough", level=2)
+readme.add_paragraph("A short 5-minute video walkthrough is available [here](https://youtu.be/yKhKyEOJjZQ)")
+
+readme.add_header("Overview", level=2)
+
+def add_image(img_name):
+    img_url = "https://github.com/autonlab/pmx_data/blob/" + branchname + "/images/" + img_name + ".png?raw=true"
+    readme.add_element(snakemd.Paragraph([snakemd.InlineText(img_name, url=img_url, image=True)]))
+
+add_image("equipment-type")
+add_image("pmx-tasks")
+add_image("ml-algorithms")
+
 readme.add_header("List of Datasets", level=2)
 
 infoTable = []
@@ -48,12 +62,17 @@ for dirname in sorted(os.listdir("pmx_data")):
 
     equipment = get(info, "equipment_type")
 
+    sizegb = get(info, "sizegb")
+    features = get(info, "features")
+    rows = get(info, "rows")
+
     note = get(info, "note")
 
-    infoTable = infoTable + [[namelink, description, problems, equipment, note]]
+    infoTable = infoTable + [[namelink, description, problems, equipment, sizegb, features, rows, note]]
 
 readme.add_table(
-    ["**Dataset**", "**Description**", "**Problems**", "**Equipment Type**", "**Note**"],
+    ["**Dataset**", "**Description**", "**Problems**", "**Equipment Type**", 
+    "**Size (GB)**", "**Features**", "**Rows**", "**Note**"],
     infoTable
 )
 
