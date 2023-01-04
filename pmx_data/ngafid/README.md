@@ -1,3 +1,19 @@
+# ngafid
+
+Problem type: Fault detection, fault forecasting
+
+|  |
+|  |
+|  |
+## Sources
+
+Data location: https://zenodo.org/record/6624956#.Y7X8kdLMLlg
+
+No data citation available
+
+No data license available.
+
+## Additional information
 # A Large-Scale Annotated Multivariate Time Series Aviation Maintenance Dataset from the NGAFID
 
 Made available by Hong Yang and Travis Desell.
