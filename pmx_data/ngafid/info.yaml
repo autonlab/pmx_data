@@ -1,0 +1,5 @@
+description: A Large-Scale Annotated Multivariate Time Series Aviation Maintenance Dataset from the NGAFID
+equipment_type: Aircraft
+location: https://zenodo.org/record/6624956#.Y7X8kdLMLlg
+name: ngafid
+problem_type: Fault detection, fault forecasting
