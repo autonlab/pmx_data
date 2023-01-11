@@ -167,15 +167,24 @@ def generate_sub_readme(datasetpath):
     with open(readme_path, 'w') as readme_file:
         readme_file.write(output_file)
 
+    readme_path_web = "docs/data/" + os.path.split(datasetpath)[1] + ".md"
+    with open(readme_path_web, 'w') as readme_file:
+        readme_file.write(output_file)
+
 #sys.argv[1:] should be a list of paths of changed info.yaml files or custom_writeup.md files
 #go thru each argument and extract the path to the dataset folder
 #os.path.split(filepath)[0] returns the path for the folder containing the file at filepath
 
+#uncomment to regenerate for all datasets
+#datasetpaths = [('pmx_data/' + name) for name in os.listdir("pmx_data")]
+
 datasetpaths = [os.path.split(filepath)[0] for filepath in sys.argv[1:]]
+#this will be a list of paths that look like /pmx_data/datasetname
 
 #if both info.yaml and custom_writeup.md were modified for the same dataset, there will be duplicates
 #remove these so we dont generate the same README twice
 datasetpaths = list(set(datasetpaths))
+
 
 for datasetpath in datasetpaths:
     generate_sub_readme(datasetpath)
