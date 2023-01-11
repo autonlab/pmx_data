@@ -1,0 +1,11 @@
+theme: jekyll-theme-minimal
+title: Octocat's homepage
+description: Bookmark this to keep an eye on my project updates!
+exclude:
+  - *.py
+  - *.txt
+  - *.yml
+  - *.yaml
+  - *.sh
+  - *.png
+  - custom_writeup.md
